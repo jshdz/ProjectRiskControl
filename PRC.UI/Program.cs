@@ -9,7 +9,7 @@ namespace PRC.UI
     static class Program
     {
         /// <summary>
-        /// The main entry point for the application.
+        /// The main entry point for the application. TESTTSSSSSSSSSSSSSSS
         /// </summary>
         [STAThread]
         static void Main()
