@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="IImpactoRepository.cs" />
     <Compile Include="ImpactoRepository.cs" />
+    <Compile Include="IProbabilidadRepository.cs" />
+    <Compile Include="ProbabilidadRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

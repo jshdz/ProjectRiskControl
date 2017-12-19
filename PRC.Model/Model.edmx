@@ -7,15 +7,81 @@
     <Schema Namespace="PRCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Impactos">
           <Key>
-            <PropertyRef Name="id" />
+            <PropertyRef Name="idImpacto" />
           </Key>
-          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="categoria" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="descripcion" Type="nvarchar" MaxLength="350" Nullable="false" />
+          <Property Name="idImpacto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="categoria" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="descripcion" Type="nvarchar" MaxLength="500" Nullable="false" />
           <Property Name="valor" Type="int" Nullable="false" />
         </EntityType>
+        <EntityType Name="Probabilidades">
+          <Key>
+            <PropertyRef Name="idProbabilidad" />
+          </Key>
+          <Property Name="idProbabilidad" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="categoria" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="descripcion" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="rangoInicio" Type="int" Nullable="false" />
+          <Property Name="rangoFin" Type="int" Nullable="false" />
+          <Property Name="valor" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Riesgos">
+          <Key>
+            <PropertyRef Name="idRiesgo" />
+          </Key>
+          <Property Name="idRiesgo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="puntuajePI" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="descripcion" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="categoria" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="disparador" Type="nvarchar" MaxLength="500" />
+          <Property Name="accionarDisparador" Type="nvarchar" MaxLength="500" />
+          <Property Name="tipoRespuesta" Type="nvarchar" MaxLength="100" />
+          <Property Name="descripcionRespuesta" Type="nvarchar" MaxLength="500" />
+          <Property Name="resultadoRespuesta" Type="nvarchar" MaxLength="500" />
+          <Property Name="resultadoEsperado" Type="nvarchar" MaxLength="500" />
+          <Property Name="encargadoMonitoreo" Type="nvarchar" MaxLength="150" />
+          <Property Name="encargadoRespuesta" Type="nvarchar" MaxLength="150" />
+          <Property Name="nivel" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="color" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="idImpacto" Type="int" Nullable="false" />
+          <Property Name="idProbabilidad" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_RiesgoImpacto">
+          <End Role="Impactos" Type="Self.Impactos" Multiplicity="1" />
+          <End Role="Riesgos" Type="Self.Riesgos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Impactos">
+              <PropertyRef Name="idImpacto" />
+            </Principal>
+            <Dependent Role="Riesgos">
+              <PropertyRef Name="idImpacto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RiesgoProbabilidad">
+          <End Role="Probabilidades" Type="Self.Probabilidades" Multiplicity="1" />
+          <End Role="Riesgos" Type="Self.Riesgos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Probabilidades">
+              <PropertyRef Name="idProbabilidad" />
+            </Principal>
+            <Dependent Role="Riesgos">
+              <PropertyRef Name="idProbabilidad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="PRCModelStoreContainer">
           <EntitySet Name="Impactos" EntityType="Self.Impactos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Probabilidades" EntityType="Self.Probabilidades" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Riesgos" EntityType="Self.Riesgos" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_RiesgoImpacto" Association="Self.FK_RiesgoImpacto">
+            <End Role="Impactos" EntitySet="Impactos" />
+            <End Role="Riesgos" EntitySet="Riesgos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RiesgoProbabilidad" Association="Self.FK_RiesgoProbabilidad">
+            <End Role="Probabilidades" EntitySet="Probabilidades" />
+            <End Role="Riesgos" EntitySet="Riesgos" />
+          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -23,35 +89,136 @@
       <Schema Namespace="PRCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Impacto">
           <Key>
-            <PropertyRef Name="id" />
+            <PropertyRef Name="idImpacto" />
           </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="categoria" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="descripcion" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="idImpacto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="categoria" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" a:GetterAccess="Public" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
           <Property Name="valor" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityContainer Name="PRCEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Impactos" EntityType="Self.Impacto" />
+          <EntitySet Name="Probabilidades" EntityType="PRCModel.Probabilidad" />
+          <EntitySet Name="Riesgos" EntityType="PRCModel.Riesgo" />
+          <AssociationSet Name="RiesgoImpacto" Association="PRCModel.RiesgoImpacto">
+            <End Role="Riesgo" EntitySet="Riesgos" />
+            <End Role="Impacto" EntitySet="Impactos" />
+          </AssociationSet>
+          <AssociationSet Name="RiesgoProbabilidad" Association="PRCModel.RiesgoProbabilidad">
+            <End Role="Riesgo" EntitySet="Riesgos" />
+            <End Role="Probabilidad" EntitySet="Probabilidades" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="Probabilidad">
+          <Key>
+            <PropertyRef Name="idProbabilidad" />
+          </Key>
+          <Property Name="idProbabilidad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="categoria" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="descripcion" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="rangoInicio" Type="Int32" Nullable="false" />
+          <Property Name="rangoFin" Type="Int32" Nullable="false" />
+          <Property Name="valor" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Riesgo">
+          <Key>
+            <PropertyRef Name="idRiesgo" />
+          </Key>
+          <Property Name="idRiesgo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="puntuajePI" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="descripcion" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="categoria" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="disparador" Type="String" MaxLength="500" Nullable="true" Unicode="true" FixedLength="false" />
+          <Property Name="accionarDisparador" Type="String" MaxLength="500" Nullable="true" Unicode="true" FixedLength="false" />
+          <Property Name="tipoRespuesta" Type="String" Nullable="true" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="descripcionRespuesta" Type="String" Nullable="true" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="resultadoRespuesta" Type="String" Nullable="true" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="resultadoEsperado" Type="String" Nullable="true" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="encargadoMonitoreo" Type="String" MaxLength="150" Nullable="true" Unicode="true" FixedLength="false" />
+          <Property Name="encargadoRespuesta" Type="String" MaxLength="150" Nullable="true" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Impacto" Relationship="PRCModel.RiesgoImpacto" FromRole="Riesgo" ToRole="Impacto" />
+          <NavigationProperty Name="Probabilidad" Relationship="PRCModel.RiesgoProbabilidad" FromRole="Riesgo" ToRole="Probabilidad" />
+          <Property Name="nivel" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="color" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="idImpacto" Type="Int32" Nullable="false" />
+          <Property Name="idProbabilidad" Type="Int32" Nullable="false" />
+          </EntityType>
+        <Association Name="RiesgoImpacto">
+          <End Type="PRCModel.Riesgo" Role="Riesgo" Multiplicity="*" />
+          <End Type="PRCModel.Impacto" Role="Impacto" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="Impacto">
+              <PropertyRef Name="idImpacto" />
+            </Principal>
+            <Dependent Role="Riesgo">
+              <PropertyRef Name="idImpacto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RiesgoProbabilidad">
+          <End Type="PRCModel.Riesgo" Role="Riesgo" Multiplicity="*" />
+          <End Type="PRCModel.Probabilidad" Role="Probabilidad" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="Probabilidad">
+              <PropertyRef Name="idProbabilidad" />
+            </Principal>
+            <Dependent Role="Riesgo">
+              <PropertyRef Name="idProbabilidad" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
-      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="PRCModelStoreContainer" CdmEntityContainer="PRCEntities">
-          <EntitySetMapping Name="Impactos">
-            <EntityTypeMapping TypeName="PRCModel.Impacto">
-              <MappingFragment StoreEntitySet="Impactos">
-                <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="categoria" ColumnName="categoria" />
-                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
-                <ScalarProperty Name="valor" ColumnName="valor" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-        </EntityContainerMapping>
-      </Mapping>
-    </edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PRCModelStoreContainer" CdmEntityContainer="PRCEntities">
+    <EntitySetMapping Name="Impactos">
+      <EntityTypeMapping TypeName="IsTypeOf(PRCModel.Impacto)">
+        <MappingFragment StoreEntitySet="Impactos">
+          <ScalarProperty Name="idImpacto" ColumnName="idImpacto" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Probabilidades">
+      <EntityTypeMapping TypeName="IsTypeOf(PRCModel.Probabilidad)">
+        <MappingFragment StoreEntitySet="Probabilidades">
+          <ScalarProperty Name="idProbabilidad" ColumnName="idProbabilidad" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="rangoInicio" ColumnName="rangoInicio" />
+          <ScalarProperty Name="rangoFin" ColumnName="rangoFin" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Riesgos">
+      <EntityTypeMapping TypeName="IsTypeOf(PRCModel.Riesgo)">
+        <MappingFragment StoreEntitySet="Riesgos">
+          <ScalarProperty Name="idRiesgo" ColumnName="idRiesgo" />
+          <ScalarProperty Name="puntuajePI" ColumnName="puntuajePI" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="disparador" ColumnName="disparador" />
+          <ScalarProperty Name="accionarDisparador" ColumnName="accionarDisparador" />
+          <ScalarProperty Name="tipoRespuesta" ColumnName="tipoRespuesta" />
+          <ScalarProperty Name="descripcionRespuesta" ColumnName="descripcionRespuesta" />
+          <ScalarProperty Name="resultadoRespuesta" ColumnName="resultadoRespuesta" />
+          <ScalarProperty Name="resultadoEsperado" ColumnName="resultadoEsperado" />
+          <ScalarProperty Name="encargadoMonitoreo" ColumnName="encargadoMonitoreo" />
+          <ScalarProperty Name="encargadoRespuesta" ColumnName="encargadoRespuesta" />
+          <ScalarProperty Name="nivel" ColumnName="nivel" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="idImpacto" ColumnName="idImpacto" />
+          <ScalarProperty Name="idProbabilidad" ColumnName="idProbabilidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
   </edmx:Runtime>
   <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
   <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
@@ -65,7 +232,7 @@
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
         <DesignerProperty Name="EnablePluralization" Value="true" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
-        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
       </DesignerInfoPropertySet>
     </Options>

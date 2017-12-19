@@ -7,57 +7,52 @@ using PRC.Model;
 
 namespace PRC.AccesoDatos
 {
-    public class ImpactoRepository : IImpactoRepository
+    public class ProbabilidadRepository : IProbabilidadRepository
     {
-        public Impacto insert(Impacto pobj)
+        public Probabilidad insert(Probabilidad pobj)
         {
             using (PRCEntities db = new PRCEntities()) {
-                db.Impactos.Add(pobj);
+                db.Probabilidades.Add(pobj);
                 db.SaveChanges();
                 return pobj;
             }
         }
 
-        public void update(Impacto pobj)
+        public void update(Probabilidad pobj)
         {
             using (PRCEntities db = new PRCEntities()) {
-                db.Impactos.Attach(pobj);
+                db.Probabilidades.Attach(pobj);
                 db.Entry(pobj).State = System.Data.Entity.EntityState.Modified;
             }
         }
 
-        public void delete(Impacto pobj)
+        public void delete(Probabilidad pobj)
         {
             using (PRCEntities db = new PRCEntities()) {
-                db.Impactos.Attach(pobj);
-                db.Impactos.Remove(pobj);
+                db.Probabilidades.Attach(pobj);
+                db.Probabilidades.Remove(pobj);
                 db.SaveChanges();
             }
         }
 
-        public Impacto getById(int pid)
+        public Probabilidad getById(int pid)
         {
             using (PRCEntities db = new PRCEntities()) {
-                return db.Impactos.Find(pid);
+                return db.Probabilidades.Find(pid);
             }
         }
 
-        public Impacto getByCategoria(string pcategoria)
+        public Probabilidad getByCategoria(string pcategoria)
         {
             using (PRCEntities db = new PRCEntities()) {
-
-                var data = from impacto in db.Impactos
-                           where impacto.categoria == pcategoria
-                           select impacto;
-
-                return data.FirstOrDefault();
+                return db.Probabilidades.Find(pcategoria);
             }
         }
 
-        public List<Impacto> getAll()
+        public List<Probabilidad> getAll()
         {
             using (PRCEntities db = new PRCEntities()) {
-                return db.Impactos.ToList();
+                return db.Probabilidades.ToList();
             }
         }
     }

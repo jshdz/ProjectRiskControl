@@ -12,11 +12,13 @@ namespace PRC.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class Impacto
+    public partial class Probabilidad
     {
-        public int idImpacto { get; set; }
+        public int idProbabilidad { get; set; }
         public string categoria { get; set; }
         public string descripcion { get; set; }
+        public int rangoInicio { get; set; }
+        public int rangoFin { get; set; }
         public int valor { get; set; }
     }
 }

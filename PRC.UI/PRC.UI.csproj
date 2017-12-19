@@ -79,6 +79,8 @@
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\PRC.Model.Impacto.datasource" />
+    <None Include="Properties\DataSources\PRC.Model.Probabilidad.datasource" />
+    <None Include="Properties\DataSources\PRC.Model.Riesgo.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -113,8 +115,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\clear-button.png" />
+    <Content Include="Resources\delete.png" />
     <Content Include="Resources\discoun222t.png" />
     <Content Include="Resources\discount.png" />
+    <Content Include="Resources\edit.png" />
+    <Content Include="Resources\file.png" />
     <Content Include="Resources\iconExit.png" />
     <Content Include="Resources\iconLogoPRC.png" />
     <Content Include="Resources\iconResize.png" />
@@ -130,7 +135,9 @@
     <Content Include="Resources\presentation.png" />
     <Content Include="Resources\presentation2.png" />
     <Content Include="Resources\remove.png" />
+    <Content Include="Resources\visibility.png" />
     <Content Include="Resources\warnin233.png" />
+    <Content Include="Resources\warning %282%29.png" />
     <Content Include="Resources\warning-%281%292.png" />
     <Content Include="Resources\yield.png" />
   </ItemGroup>

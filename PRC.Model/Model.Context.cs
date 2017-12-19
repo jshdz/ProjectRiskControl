@@ -26,5 +26,7 @@ namespace PRC.Model
         }
     
         public virtual DbSet<Impacto> Impactos { get; set; }
+        public virtual DbSet<Probabilidad> Probabilidades { get; set; }
+        public virtual DbSet<Riesgo> Riesgos { get; set; }
     }
 }
