@@ -5,14 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using PRC.Model;
 
-    namespace PRC.AccesoDatos
+namespace PRC.AccesoDatos
 {
     public interface IImpactoRepository
     {
-        List<Impacto> getAll();
-        Impacto getById(int pid);
         Impacto insert(Impacto pobj);
         void update(Impacto pobj);
         void delete(Impacto pobj);
+        Impacto getById(int pid);
+        Impacto getByCategoria(string pcategoria);
+        List<Impacto> getAll();
     }
 }

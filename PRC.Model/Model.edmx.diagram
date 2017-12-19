@@ -4,8 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="1d5f8964054343dd9ce719f381f8279f" Name="Diagram1">
-        <EntityTypeShape EntityType="PRCModel.Impacto" Width="1.75" PointX="0.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="1d5f8964054343dd9ce719f381f8279f" Name="ERPRC" ShowGrid="true" DisplayType="true">
+        <EntityTypeShape EntityType="PRCModel.Impacto" Width="1.75" PointX="0.75" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRCModel.Probabilidad" Width="1.875" PointX="9.625" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PRCModel.Riesgo" Width="2.375" PointX="4.875" PointY="0.625" />
+        <AssociationConnector Association="PRCModel.RiesgoImpacto" />
+        <AssociationConnector Association="PRCModel.RiesgoProbabilidad" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
