@@ -45,9 +45,9 @@ namespace PRC.API.Core
             return repository.getById(pid);
         }
 
-        public static Impacto getByCategoria(string pcategoria)
+        public static Impacto getByValor(int pvalor)
         {
-            return repository.getByCategoria(pcategoria);
+            return repository.getByValor(pvalor);
         }
 
         public static List<Impacto> getAll()

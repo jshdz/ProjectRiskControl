@@ -46,6 +46,11 @@ namespace PRC.API.Core
             return repository.getById(pid);
         }
 
+        public static Probabilidad getByValor(int pvalor)
+        {
+            return repository.getByValor(pvalor);
+        }
+
         public static List<Probabilidad> getAll()
         {
             return repository.getAll();

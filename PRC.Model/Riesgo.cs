@@ -15,7 +15,7 @@ namespace PRC.Model
     public partial class Riesgo
     {
         public int idRiesgo { get; set; }
-        public string puntuajePI { get; set; }
+        public Nullable<int> puntuajePI { get; set; }
         public string descripcion { get; set; }
         public string categoria { get; set; }
         public string disparador { get; set; }

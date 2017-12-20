@@ -13,7 +13,7 @@ namespace PRC.AccesoDatos
         void update(Impacto pobj);
         void delete(Impacto pobj);
         Impacto getById(int pid);
-        Impacto getByCategoria(string pcategoria);
+        Impacto getByValor(int pvalor);
         List<Impacto> getAll();
     }
 }

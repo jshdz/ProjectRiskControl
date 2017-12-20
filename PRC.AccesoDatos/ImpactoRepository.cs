@@ -42,12 +42,12 @@ namespace PRC.AccesoDatos
             }
         }
 
-        public Impacto getByCategoria(string pcategoria)
+        public Impacto getByValor(int pvalor)
         {
             using (PRCEntities db = new PRCEntities()) {
 
                 var data = from impacto in db.Impactos
-                           where impacto.categoria == pcategoria
+                           where impacto.valor == pvalor
                            select impacto;
 
                 return data.FirstOrDefault();

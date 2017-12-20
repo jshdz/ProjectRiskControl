@@ -43,6 +43,7 @@
     <Compile Include="ImpactoServices.cs" />
     <Compile Include="ProbabilidadServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RiesgoServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PRC.AccesoDatos\PRC.AccesoDatos.csproj">
