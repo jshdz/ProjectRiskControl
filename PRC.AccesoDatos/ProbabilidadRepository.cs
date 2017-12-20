@@ -42,10 +42,15 @@ namespace PRC.AccesoDatos
             }
         }
 
-        public Probabilidad getByCategoria(string pcategoria)
+        public Probabilidad getByValor(int pvalor)
         {
             using (PRCEntities db = new PRCEntities()) {
-                return db.Probabilidades.Find(pcategoria);
+
+                var data = from probabilidad in db.Probabilidades
+                           where probabilidad.valor == pvalor
+                           select probabilidad;
+
+                return data.FirstOrDefault();
             }
         }
 

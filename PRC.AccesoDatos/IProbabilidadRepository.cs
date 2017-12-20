@@ -13,7 +13,7 @@ namespace PRC.AccesoDatos
         void update(Probabilidad pobj);
         void delete(Probabilidad pobj);
         Probabilidad getById(int pid);
-        Probabilidad getByCategoria(string pcategoria);
+        Probabilidad getByValor(int pvalor);
         List<Probabilidad> getAll();
     }
 }

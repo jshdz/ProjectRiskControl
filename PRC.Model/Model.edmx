@@ -30,8 +30,8 @@
             <PropertyRef Name="idRiesgo" />
           </Key>
           <Property Name="idRiesgo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="puntuajePI" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="descripcion" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="puntuajePI" Type="int" />
+          <Property Name="descripcion" Type="nvarchar" MaxLength="500" />
           <Property Name="categoria" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="disparador" Type="nvarchar" MaxLength="500" />
           <Property Name="accionarDisparador" Type="nvarchar" MaxLength="500" />
@@ -41,8 +41,8 @@
           <Property Name="resultadoEsperado" Type="nvarchar" MaxLength="500" />
           <Property Name="encargadoMonitoreo" Type="nvarchar" MaxLength="150" />
           <Property Name="encargadoRespuesta" Type="nvarchar" MaxLength="150" />
-          <Property Name="nivel" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="color" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="nivel" Type="nvarchar(max)" />
+          <Property Name="color" Type="nvarchar(max)" />
           <Property Name="idImpacto" Type="int" Nullable="false" />
           <Property Name="idProbabilidad" Type="int" Nullable="false" />
         </EntityType>
@@ -125,8 +125,8 @@
             <PropertyRef Name="idRiesgo" />
           </Key>
           <Property Name="idRiesgo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="puntuajePI" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
-          <Property Name="descripcion" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+          <Property Name="puntuajePI" Type="Int32" Nullable="true" />
+          <Property Name="descripcion" Type="String" MaxLength="500" Unicode="true" FixedLength="false" Nullable="true" />
           <Property Name="categoria" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
           <Property Name="disparador" Type="String" MaxLength="500" Nullable="true" Unicode="true" FixedLength="false" />
           <Property Name="accionarDisparador" Type="String" MaxLength="500" Nullable="true" Unicode="true" FixedLength="false" />
@@ -138,8 +138,8 @@
           <Property Name="encargadoRespuesta" Type="String" MaxLength="150" Nullable="true" Unicode="true" FixedLength="false" />
           <NavigationProperty Name="Impacto" Relationship="PRCModel.RiesgoImpacto" FromRole="Riesgo" ToRole="Impacto" />
           <NavigationProperty Name="Probabilidad" Relationship="PRCModel.RiesgoProbabilidad" FromRole="Riesgo" ToRole="Probabilidad" />
-          <Property Name="nivel" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
-          <Property Name="color" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="nivel" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" Nullable="true" />
+          <Property Name="color" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" Nullable="true" />
           <Property Name="idImpacto" Type="Int32" Nullable="false" />
           <Property Name="idProbabilidad" Type="Int32" Nullable="false" />
           </EntityType>

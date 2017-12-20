@@ -33,8 +33,10 @@ namespace PRC.UI
             loadProbabilidadesDefaults();
             reloadListImpactos();
             reloadListProbabilidades();
+            reloadListRiesgos();
             listImpactos.ClearSelected();
             listProbabilidades.ClearSelected();
+            listRiesgos.ClearSelected();
         }
 
         private void loadImpactosDefaults()
@@ -59,6 +61,11 @@ namespace PRC.UI
         private void reloadListProbabilidades()
         {
             probabilidadBindingSource.DataSource = ProbabilidadServices.getAll();
+        }
+
+        private void reloadListRiesgos()
+        {
+            riesgoBindingSource.DataSource = RiesgoServices.getAll();
         }
 
         private void throwException(string pexMsg)
@@ -109,6 +116,7 @@ namespace PRC.UI
             drag = false;
         }
 
+        //MÉTODOS DEL TAB Configuración de Probabilidad e Impacto.
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -143,9 +151,10 @@ namespace PRC.UI
             //    descripcion = txtImpactoDesc.Text,
             //    valor = Convert.ToInt32(txtImpactoValor.Value)
             //};
-            Impacto impactoEditado = ImpactoServices.getByCategoria(txtImpactoCategoria.Text);
 
-            impactoEditado.descripcion = txtImpactoDesc.Text;
+            //Impacto impactoEditado = ImpactoServices.getByCategoria(txtImpactoCategoria.Text);
+
+            //impactoEditado.descripcion = txtImpactoDesc.Text;
 
             try {
                 ImpactoServices.update(impactoBindingSourceForm.Current as Impacto);
@@ -219,5 +228,65 @@ namespace PRC.UI
         //{
         //    //impactoBindingSourceForm.DataSource = ImpactoServices.getByCategoria(listImpactos.GetItemText(listImpactos.SelectedItem));
         //}
+
+        //MÉTODOS DEL TAB Configuración de Riesgos.
+        private void btnRiesgoAgregar_Click(object sender, EventArgs e)
+        {
+            //throwException(cbxRiesgoValorImpacto.GetItemText(cbxRiesgoValorImpacto.SelectedItem));
+
+            Impacto impactoSeleccionado = ImpactoServices.getByValor(Convert.ToInt32(cbxRiesgoValorImpacto.GetItemText(cbxRiesgoValorImpacto.SelectedItem)));
+            Probabilidad probabilidadSeleccionada = ProbabilidadServices.getByValor(Convert.ToInt32(cbxRiesgoValorProbabilidad.GetItemText(cbxRiesgoValorProbabilidad.SelectedItem)));
+
+            Riesgo riesgoNuevo = new Riesgo {
+                categoria = cbxRiesgoCategoria.SelectedText,
+                descripcion = txtRiesgoDescripcion.Text,
+                encargadoMonitoreo = txtRiesgoEncargadoMonitoreo.Text,
+                encargadoRespuesta = txtRiesgoEncargadoRespuesta.Text,
+                disparador = txtRiesgoDisparador.Text,
+                resultadoEsperado = txtRiesgoResultadoEsperado.Text,
+                tipoRespuesta = txtRiesgoTipoRespuesta.Text,
+                descripcionRespuesta = txtRiesgoDescRespuesta.Text,
+                accionarDisparador = txtRiesgoDisparadorRespuesta.Text,
+                resultadoRespuesta = txtRiesgoResultadoRespuesta.Text,
+                idProbabilidad = probabilidadSeleccionada.idProbabilidad,
+                idImpacto = impactoSeleccionado.idImpacto,
+                puntuajePI = 0,
+                nivel = "",
+                color = ""
+            };
+
+            RiesgoServices.insert(riesgoNuevo);
+            reloadListRiesgos();
+            clearFieldsRiesgo();
+        }
+
+        private void btnRiesgoEliminar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro que desea eliminar este riesgo?", "Eliminar Riesgo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
+                RiesgoServices.delete(riesgoBindingSource.Current as Riesgo);
+                riesgoBindingSource.RemoveCurrent();
+            }
+        }
+
+        private void btnRiesgoCancelar_Click(object sender, EventArgs e)
+        {
+            clearFieldsRiesgo();
+        }
+
+        private void clearFieldsRiesgo()
+        {
+            txtRiesgoDescripcion.Clear();
+            txtRiesgoDescRespuesta.Clear();
+            txtRiesgoDisparador.Clear();
+            txtRiesgoDisparadorRespuesta.Clear();
+            txtRiesgoEncargadoMonitoreo.Clear();
+            txtRiesgoEncargadoRespuesta.Clear();
+            txtRiesgoResultadoEsperado.Clear();
+            txtRiesgoResultadoRespuesta.Clear();
+            txtRiesgoTipoRespuesta.Clear();
+            cbxRiesgoCategoria.ResetText();
+            cbxRiesgoValorProbabilidad.ResetText();
+            cbxRiesgoValorImpacto.ResetText();
+        }
     }
 }
