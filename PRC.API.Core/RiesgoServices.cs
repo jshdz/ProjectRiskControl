@@ -11,7 +11,7 @@ namespace PRC.API.Core
     public static class RiesgoServices
     {
         static IRiesgoRepository repository;
-        private static List<string> listaCategoriasRiesgo = new List<string> {"bajo", "medio", "alto"};
+        private static string[,] infoPMI = new string[ProbabilidadServices.getAll().Count(), ImpactoServices.getAll().Count()];
 
         static RiesgoServices()
         {

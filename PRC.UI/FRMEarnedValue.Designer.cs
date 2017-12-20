@@ -1,6 +1,6 @@
 ﻿namespace PRC.UI
 {
-    partial class FRMRiesgos
+    partial class FRMEarnedValue
     {
         /// <summary>
         /// Required designer variable.
@@ -58,7 +58,7 @@
             this.splitter9 = new System.Windows.Forms.Splitter();
             this.tabControlFRM = new MetroFramework.Controls.MetroTabControl();
             this.tabAdministarRiesgos = new System.Windows.Forms.TabPage();
-            this.panel14 = new System.Windows.Forms.Panel();
+            this.pnlTabBackground3 = new System.Windows.Forms.Panel();
             this.pnlMPI = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
             this.splitter91 = new System.Windows.Forms.Splitter();
@@ -190,106 +190,12 @@
             this.splitter122 = new System.Windows.Forms.Splitter();
             this.label39 = new System.Windows.Forms.Label();
             this.tabRiesgosConfig = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.splitter54 = new System.Windows.Forms.Splitter();
-            this.splitter55 = new System.Windows.Forms.Splitter();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.cbxRiesgoCategoria = new System.Windows.Forms.ComboBox();
-            this.probabilidadBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label11 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.splitter82 = new System.Windows.Forms.Splitter();
-            this.btnRiesgoEliminar = new System.Windows.Forms.Button();
-            this.listRiesgos = new System.Windows.Forms.ListBox();
-            this.riesgoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.splitter83 = new System.Windows.Forms.Splitter();
-            this.splitter84 = new System.Windows.Forms.Splitter();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.txtRiesgoResultadoRespuesta = new System.Windows.Forms.TextBox();
-            this.impactoBindingSourceForm = new System.Windows.Forms.BindingSource(this.components);
-            this.lblRiesgoResultadoRespuesta = new System.Windows.Forms.Label();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.splitter86 = new System.Windows.Forms.Splitter();
-            this.splitter87 = new System.Windows.Forms.Splitter();
-            this.splitter88 = new System.Windows.Forms.Splitter();
-            this.splitter89 = new System.Windows.Forms.Splitter();
-            this.txtRiesgoDisparadorRespuesta = new System.Windows.Forms.TextBox();
-            this.lblRiesgoDisparadorRespuesta = new System.Windows.Forms.Label();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.splitter78 = new System.Windows.Forms.Splitter();
-            this.splitter79 = new System.Windows.Forms.Splitter();
-            this.splitter80 = new System.Windows.Forms.Splitter();
-            this.splitter81 = new System.Windows.Forms.Splitter();
-            this.txtRiesgoDescRespuesta = new System.Windows.Forms.TextBox();
-            this.lblRiesgoDescRespuesta = new System.Windows.Forms.Label();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.splitter74 = new System.Windows.Forms.Splitter();
-            this.splitter75 = new System.Windows.Forms.Splitter();
-            this.splitter76 = new System.Windows.Forms.Splitter();
-            this.splitter77 = new System.Windows.Forms.Splitter();
-            this.lblRiesgoResultadoEsperado = new System.Windows.Forms.Label();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.splitter65 = new System.Windows.Forms.Splitter();
-            this.splitter66 = new System.Windows.Forms.Splitter();
-            this.splitter67 = new System.Windows.Forms.Splitter();
-            this.splitter68 = new System.Windows.Forms.Splitter();
-            this.txtRiesgoResultadoEsperado = new System.Windows.Forms.TextBox();
-            this.lblRiesgoTipoRespuesta = new System.Windows.Forms.Label();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.splitter64 = new System.Windows.Forms.Splitter();
-            this.txtRiesgoTipoRespuesta = new System.Windows.Forms.TextBox();
-            this.lblRiesgoValorImpacto = new System.Windows.Forms.Label();
-            this.cbxRiesgoValorImpacto = new System.Windows.Forms.ComboBox();
-            this.impactoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lblRiesgoValorProbabilidad = new System.Windows.Forms.Label();
-            this.cbxRiesgoValorProbabilidad = new System.Windows.Forms.ComboBox();
-            this.txtRiesgoDisparador = new System.Windows.Forms.TextBox();
-            this.lblRiesgoDisparador = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.splitter51 = new System.Windows.Forms.Splitter();
-            this.splitter52 = new System.Windows.Forms.Splitter();
-            this.splitter53 = new System.Windows.Forms.Splitter();
-            this.splitter63 = new System.Windows.Forms.Splitter();
-            this.lblRiesgoEncargadoRespuesta = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.splitter11 = new System.Windows.Forms.Splitter();
-            this.txtRiesgoEncargadoRespuesta = new System.Windows.Forms.TextBox();
-            this.splitter50 = new System.Windows.Forms.Splitter();
-            this.lblRiesgoEncargadoMonitoreo = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.splitter10 = new System.Windows.Forms.Splitter();
-            this.txtRiesgoEncargadoMonitoreo = new System.Windows.Forms.TextBox();
-            this.btnRiesgoCancelar = new System.Windows.Forms.Button();
-            this.txtRiesgoDescripcion = new System.Windows.Forms.TextBox();
-            this.lblRiesgoDescripcion = new System.Windows.Forms.Label();
-            this.splitter56 = new System.Windows.Forms.Splitter();
-            this.btnRiesgoAgregar = new System.Windows.Forms.Button();
-            this.splitter57 = new System.Windows.Forms.Splitter();
-            this.lblRiesgoCategoria = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.splitter59 = new System.Windows.Forms.Splitter();
-            this.splitter60 = new System.Windows.Forms.Splitter();
-            this.splitter61 = new System.Windows.Forms.Splitter();
-            this.splitter62 = new System.Windows.Forms.Splitter();
-            this.splitter69 = new System.Windows.Forms.Splitter();
-            this.splitter70 = new System.Windows.Forms.Splitter();
-            this.splitter71 = new System.Windows.Forms.Splitter();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
-            this.splitter72 = new System.Windows.Forms.Splitter();
-            this.splitter73 = new System.Windows.Forms.Splitter();
-            this.label24 = new System.Windows.Forms.Label();
-            this.tabConfigProbImp = new System.Windows.Forms.TabPage();
-            this.pnlTabBackground = new System.Windows.Forms.Panel();
+            this.pnlTabBackground2 = new System.Windows.Forms.Panel();
             this.pnlEditarProbabilidad = new System.Windows.Forms.Panel();
             this.btnEliminarProbabilidad = new System.Windows.Forms.Button();
             this.splitter43 = new System.Windows.Forms.Splitter();
             this.listProbabilidades = new System.Windows.Forms.ListBox();
+            this.probabilidadBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.splitter45 = new System.Windows.Forms.Splitter();
             this.splitter46 = new System.Windows.Forms.Splitter();
             this.lbIIconEditarProbabilidad = new System.Windows.Forms.Label();
@@ -298,14 +204,14 @@
             this.splitter26 = new System.Windows.Forms.Splitter();
             this.btnEliminarImpacto = new System.Windows.Forms.Button();
             this.listImpactos = new System.Windows.Forms.ListBox();
+            this.impactoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.splitter24 = new System.Windows.Forms.Splitter();
             this.splitter25 = new System.Windows.Forms.Splitter();
             this.lblIconEditarImpacto = new System.Windows.Forms.Label();
             this.lblEditarImpacto = new System.Windows.Forms.Label();
-            this.splitter16 = new System.Windows.Forms.Splitter();
-            this.splitter12 = new System.Windows.Forms.Splitter();
             this.panel8 = new System.Windows.Forms.Panel();
             this.txtImpactoValor = new System.Windows.Forms.NumericUpDown();
+            this.impactoBindingSourceForm = new System.Windows.Forms.BindingSource(this.components);
             this.btnImpactoCancelar = new System.Windows.Forms.Button();
             this.lblImpactoValor = new System.Windows.Forms.Label();
             this.txtImpactoDesc = new System.Windows.Forms.TextBox();
@@ -346,9 +252,6 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.splitter44 = new System.Windows.Forms.Splitter();
             this.label10 = new System.Windows.Forms.Label();
-            this.splitter13 = new System.Windows.Forms.Splitter();
-            this.splitter14 = new System.Windows.Forms.Splitter();
-            this.splitter15 = new System.Windows.Forms.Splitter();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.splitter18 = new System.Windows.Forms.Splitter();
@@ -358,6 +261,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.splitter21 = new System.Windows.Forms.Splitter();
             this.splitter22 = new System.Windows.Forms.Splitter();
+            this.tabConfigProbImp = new System.Windows.Forms.TabPage();
+            this.pnlTabBackground = new System.Windows.Forms.Panel();
+            this.riesgoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pnlInfo = new System.Windows.Forms.Panel();
             this.splitter27 = new System.Windows.Forms.Splitter();
             this.splitter33 = new System.Windows.Forms.Splitter();
@@ -373,6 +279,16 @@
             this.splitter49 = new System.Windows.Forms.Splitter();
             this.lblIconExMsg = new System.Windows.Forms.Label();
             this.lblExceptionMsg = new System.Windows.Forms.Label();
+            this.splitter15 = new System.Windows.Forms.Splitter();
+            this.splitter14 = new System.Windows.Forms.Splitter();
+            this.splitter13 = new System.Windows.Forms.Splitter();
+            this.splitter12 = new System.Windows.Forms.Splitter();
+            this.splitter16 = new System.Windows.Forms.Splitter();
+            this.splitter71 = new System.Windows.Forms.Splitter();
+            this.splitter70 = new System.Windows.Forms.Splitter();
+            this.splitter69 = new System.Windows.Forms.Splitter();
+            this.splitter55 = new System.Windows.Forms.Splitter();
+            this.splitter54 = new System.Windows.Forms.Splitter();
             this.pnlMenu.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -381,7 +297,7 @@
             this.pnlBottomBar.SuspendLayout();
             this.tabControlFRM.SuspendLayout();
             this.tabAdministarRiesgos.SuspendLayout();
-            this.panel14.SuspendLayout();
+            this.pnlTabBackground3.SuspendLayout();
             this.pnlMPI.SuspendLayout();
             this.panel27.SuspendLayout();
             this.panel31.SuspendLayout();
@@ -418,29 +334,14 @@
             this.pnlProbImpVal1_4.SuspendLayout();
             this.panel36.SuspendLayout();
             this.tabRiesgosConfig.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.probabilidadBindingSource)).BeginInit();
-            this.panel24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.riesgoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.impactoBindingSourceForm)).BeginInit();
-            this.panel25.SuspendLayout();
-            this.panel23.SuspendLayout();
-            this.panel22.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.panel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.impactoBindingSource)).BeginInit();
-            this.panel18.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.tabConfigProbImp.SuspendLayout();
-            this.pnlTabBackground.SuspendLayout();
+            this.pnlTabBackground2.SuspendLayout();
             this.pnlEditarProbabilidad.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.probabilidadBindingSource)).BeginInit();
             this.pnlEditarImpacto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.impactoBindingSource)).BeginInit();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtImpactoValor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.impactoBindingSourceForm)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -451,6 +352,8 @@
             this.panel12.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.tabConfigProbImp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.riesgoBindingSource)).BeginInit();
             this.pnlInfo.SuspendLayout();
             this.pnlExceptionMsg.SuspendLayout();
             this.SuspendLayout();
@@ -701,14 +604,14 @@
             this.lblFRMTitle.Name = "lblFRMTitle";
             this.lblFRMTitle.Size = new System.Drawing.Size(245, 34);
             this.lblFRMTitle.TabIndex = 4;
-            this.lblFRMTitle.Text = "Control de Riesgos";
+            this.lblFRMTitle.Text = "Earned Value";
             this.lblFRMTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblFRMLogo
             // 
             this.lblFRMLogo.BackColor = System.Drawing.Color.White;
             this.lblFRMLogo.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblFRMLogo.Image = global::PRC.UI.Properties.Resources.presentation2;
+            this.lblFRMLogo.Image = global::PRC.UI.Properties.Resources.presentationEV2;
             this.lblFRMLogo.Location = new System.Drawing.Point(-1, 5);
             this.lblFRMLogo.Name = "lblFRMLogo";
             this.lblFRMLogo.Size = new System.Drawing.Size(247, 191);
@@ -820,7 +723,7 @@
             // tabAdministarRiesgos
             // 
             this.tabAdministarRiesgos.BackColor = System.Drawing.Color.White;
-            this.tabAdministarRiesgos.Controls.Add(this.panel14);
+            this.tabAdministarRiesgos.Controls.Add(this.pnlTabBackground3);
             this.tabAdministarRiesgos.Controls.Add(this.panel36);
             this.tabAdministarRiesgos.Location = new System.Drawing.Point(4, 37);
             this.tabAdministarRiesgos.Name = "tabAdministarRiesgos";
@@ -828,16 +731,16 @@
             this.tabAdministarRiesgos.TabIndex = 0;
             this.tabAdministarRiesgos.Text = "Administración de Riesgos";
             // 
-            // panel14
+            // pnlTabBackground3
             // 
-            this.panel14.Controls.Add(this.pnlMPI);
-            this.panel14.Controls.Add(this.splitter113);
-            this.panel14.Controls.Add(this.splitter115);
-            this.panel14.Controls.Add(this.splitter116);
-            this.panel14.Location = new System.Drawing.Point(-1, 37);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(856, 454);
-            this.panel14.TabIndex = 23;
+            this.pnlTabBackground3.Controls.Add(this.pnlMPI);
+            this.pnlTabBackground3.Controls.Add(this.splitter113);
+            this.pnlTabBackground3.Controls.Add(this.splitter115);
+            this.pnlTabBackground3.Controls.Add(this.splitter116);
+            this.pnlTabBackground3.Location = new System.Drawing.Point(-1, 37);
+            this.pnlTabBackground3.Name = "pnlTabBackground3";
+            this.pnlTabBackground3.Size = new System.Drawing.Size(856, 454);
+            this.pnlTabBackground3.TabIndex = 23;
             // 
             // pnlMPI
             // 
@@ -864,7 +767,7 @@
             this.pnlMPI.Font = new System.Drawing.Font("Open Sans", 11F);
             this.pnlMPI.Location = new System.Drawing.Point(41, 51);
             this.pnlMPI.Name = "pnlMPI";
-            this.pnlMPI.Size = new System.Drawing.Size(770, 308);
+            this.pnlMPI.Size = new System.Drawing.Size(772, 308);
             this.pnlMPI.TabIndex = 54;
             // 
             // panel27
@@ -2438,7 +2341,7 @@
             // tabRiesgosConfig
             // 
             this.tabRiesgosConfig.BackColor = System.Drawing.Color.White;
-            this.tabRiesgosConfig.Controls.Add(this.panel1);
+            this.tabRiesgosConfig.Controls.Add(this.pnlTabBackground2);
             this.tabRiesgosConfig.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabRiesgosConfig.Location = new System.Drawing.Point(4, 37);
             this.tabRiesgosConfig.Name = "tabRiesgosConfig";
@@ -2446,1208 +2349,20 @@
             this.tabRiesgosConfig.TabIndex = 0;
             this.tabRiesgosConfig.Text = "Configuración de Riesgos";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.splitter54);
-            this.panel1.Controls.Add(this.splitter55);
-            this.panel1.Controls.Add(this.panel13);
-            this.panel1.Controls.Add(this.splitter69);
-            this.panel1.Controls.Add(this.splitter70);
-            this.panel1.Controls.Add(this.splitter71);
-            this.panel1.Controls.Add(this.panel21);
-            this.panel1.Location = new System.Drawing.Point(-4, -4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(866, 496);
-            this.panel1.TabIndex = 13;
-            // 
-            // splitter54
-            // 
-            this.splitter54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter54.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter54.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter54.Location = new System.Drawing.Point(0, 493);
-            this.splitter54.MinSize = 0;
-            this.splitter54.Name = "splitter54";
-            this.splitter54.Size = new System.Drawing.Size(865, 1);
-            this.splitter54.TabIndex = 45;
-            this.splitter54.TabStop = false;
-            // 
-            // splitter55
-            // 
-            this.splitter55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter55.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter55.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter55.Location = new System.Drawing.Point(0, 494);
-            this.splitter55.MinSize = 0;
-            this.splitter55.Name = "splitter55";
-            this.splitter55.Size = new System.Drawing.Size(865, 1);
-            this.splitter55.TabIndex = 44;
-            this.splitter55.TabStop = false;
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.cbxRiesgoCategoria);
-            this.panel13.Controls.Add(this.label11);
-            this.panel13.Controls.Add(this.label9);
-            this.panel13.Controls.Add(this.panel24);
-            this.panel13.Controls.Add(this.label1);
-            this.panel13.Controls.Add(this.label26);
-            this.panel13.Controls.Add(this.label23);
-            this.panel13.Controls.Add(this.txtRiesgoResultadoRespuesta);
-            this.panel13.Controls.Add(this.lblRiesgoResultadoRespuesta);
-            this.panel13.Controls.Add(this.panel25);
-            this.panel13.Controls.Add(this.txtRiesgoDisparadorRespuesta);
-            this.panel13.Controls.Add(this.lblRiesgoDisparadorRespuesta);
-            this.panel13.Controls.Add(this.panel23);
-            this.panel13.Controls.Add(this.txtRiesgoDescRespuesta);
-            this.panel13.Controls.Add(this.lblRiesgoDescRespuesta);
-            this.panel13.Controls.Add(this.panel22);
-            this.panel13.Controls.Add(this.lblRiesgoResultadoEsperado);
-            this.panel13.Controls.Add(this.panel20);
-            this.panel13.Controls.Add(this.lblRiesgoTipoRespuesta);
-            this.panel13.Controls.Add(this.panel19);
-            this.panel13.Controls.Add(this.lblRiesgoValorImpacto);
-            this.panel13.Controls.Add(this.cbxRiesgoValorImpacto);
-            this.panel13.Controls.Add(this.lblRiesgoValorProbabilidad);
-            this.panel13.Controls.Add(this.cbxRiesgoValorProbabilidad);
-            this.panel13.Controls.Add(this.txtRiesgoDisparador);
-            this.panel13.Controls.Add(this.lblRiesgoDisparador);
-            this.panel13.Controls.Add(this.panel18);
-            this.panel13.Controls.Add(this.lblRiesgoEncargadoRespuesta);
-            this.panel13.Controls.Add(this.panel11);
-            this.panel13.Controls.Add(this.splitter50);
-            this.panel13.Controls.Add(this.lblRiesgoEncargadoMonitoreo);
-            this.panel13.Controls.Add(this.panel2);
-            this.panel13.Controls.Add(this.btnRiesgoCancelar);
-            this.panel13.Controls.Add(this.txtRiesgoDescripcion);
-            this.panel13.Controls.Add(this.lblRiesgoDescripcion);
-            this.panel13.Controls.Add(this.splitter56);
-            this.panel13.Controls.Add(this.btnRiesgoAgregar);
-            this.panel13.Controls.Add(this.splitter57);
-            this.panel13.Controls.Add(this.lblRiesgoCategoria);
-            this.panel13.Controls.Add(this.panel16);
-            this.panel13.Location = new System.Drawing.Point(3, 42);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(856, 454);
-            this.panel13.TabIndex = 21;
-            // 
-            // cbxRiesgoCategoria
-            // 
-            this.cbxRiesgoCategoria.BackColor = System.Drawing.Color.White;
-            this.cbxRiesgoCategoria.DataSource = this.probabilidadBindingSource;
-            this.cbxRiesgoCategoria.DisplayMember = "categoria";
-            this.cbxRiesgoCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxRiesgoCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbxRiesgoCategoria.Font = new System.Drawing.Font("Open Sans", 8.5F);
-            this.cbxRiesgoCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.cbxRiesgoCategoria.FormattingEnabled = true;
-            this.cbxRiesgoCategoria.Location = new System.Drawing.Point(24, 43);
-            this.cbxRiesgoCategoria.MaxDropDownItems = 30;
-            this.cbxRiesgoCategoria.Name = "cbxRiesgoCategoria";
-            this.cbxRiesgoCategoria.Size = new System.Drawing.Size(193, 27);
-            this.cbxRiesgoCategoria.TabIndex = 85;
-            this.cbxRiesgoCategoria.ValueMember = "categoria";
-            // 
-            // probabilidadBindingSource
-            // 
-            this.probabilidadBindingSource.DataSource = typeof(PRC.Model.Probabilidad);
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Open Sans Semibold", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(114)))), ((int)(((byte)(88)))));
-            this.label11.Location = new System.Drawing.Point(690, 160);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(12, 16);
-            this.label11.TabIndex = 84;
-            this.label11.Text = "*";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Open Sans Semibold", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(114)))), ((int)(((byte)(88)))));
-            this.label9.Location = new System.Drawing.Point(502, 160);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(12, 16);
-            this.label9.TabIndex = 83;
-            this.label9.Text = "*";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel24
-            // 
-            this.panel24.Controls.Add(this.splitter82);
-            this.panel24.Controls.Add(this.btnRiesgoEliminar);
-            this.panel24.Controls.Add(this.listRiesgos);
-            this.panel24.Controls.Add(this.splitter83);
-            this.panel24.Controls.Add(this.splitter84);
-            this.panel24.Controls.Add(this.label4);
-            this.panel24.Controls.Add(this.label8);
-            this.panel24.Location = new System.Drawing.Point(512, 210);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(343, 176);
-            this.panel24.TabIndex = 82;
-            // 
-            // splitter82
-            // 
-            this.splitter82.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter82.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter82.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter82.Location = new System.Drawing.Point(1, 0);
-            this.splitter82.MinSize = 0;
-            this.splitter82.Name = "splitter82";
-            this.splitter82.Size = new System.Drawing.Size(342, 1);
-            this.splitter82.TabIndex = 44;
-            this.splitter82.TabStop = false;
-            // 
-            // btnRiesgoEliminar
-            // 
-            this.btnRiesgoEliminar.BackColor = System.Drawing.Color.Transparent;
-            this.btnRiesgoEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.btnRiesgoEliminar.FlatAppearance.BorderSize = 0;
-            this.btnRiesgoEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnRiesgoEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
-            this.btnRiesgoEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRiesgoEliminar.Font = new System.Drawing.Font("Open Sans Light", 9F);
-            this.btnRiesgoEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.btnRiesgoEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRiesgoEliminar.Location = new System.Drawing.Point(260, 143);
-            this.btnRiesgoEliminar.Name = "btnRiesgoEliminar";
-            this.btnRiesgoEliminar.Size = new System.Drawing.Size(73, 27);
-            this.btnRiesgoEliminar.TabIndex = 33;
-            this.btnRiesgoEliminar.Text = "Eliminar";
-            this.btnRiesgoEliminar.UseVisualStyleBackColor = false;
-            this.btnRiesgoEliminar.Click += new System.EventHandler(this.btnRiesgoEliminar_Click);
-            // 
-            // listRiesgos
-            // 
-            this.listRiesgos.BackColor = System.Drawing.Color.White;
-            this.listRiesgos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listRiesgos.DataSource = this.riesgoBindingSource;
-            this.listRiesgos.DisplayMember = "idRiesgo";
-            this.listRiesgos.Font = new System.Drawing.Font("Open Sans", 9.5F);
-            this.listRiesgos.ForeColor = System.Drawing.Color.DimGray;
-            this.listRiesgos.FormattingEnabled = true;
-            this.listRiesgos.ItemHeight = 22;
-            this.listRiesgos.Location = new System.Drawing.Point(17, 49);
-            this.listRiesgos.Name = "listRiesgos";
-            this.listRiesgos.Size = new System.Drawing.Size(306, 88);
-            this.listRiesgos.TabIndex = 28;
-            // 
-            // riesgoBindingSource
-            // 
-            this.riesgoBindingSource.DataSource = typeof(PRC.Model.Riesgo);
-            // 
-            // splitter83
-            // 
-            this.splitter83.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter83.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter83.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter83.Location = new System.Drawing.Point(1, 175);
-            this.splitter83.MinSize = 0;
-            this.splitter83.Name = "splitter83";
-            this.splitter83.Size = new System.Drawing.Size(342, 1);
-            this.splitter83.TabIndex = 43;
-            this.splitter83.TabStop = false;
-            // 
-            // splitter84
-            // 
-            this.splitter84.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter84.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter84.Location = new System.Drawing.Point(0, 0);
-            this.splitter84.MinSize = 0;
-            this.splitter84.Name = "splitter84";
-            this.splitter84.Size = new System.Drawing.Size(1, 176);
-            this.splitter84.TabIndex = 42;
-            this.splitter84.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Image = global::PRC.UI.Properties.Resources.file;
-            this.label4.Location = new System.Drawing.Point(12, 5);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 42);
-            this.label4.TabIndex = 6;
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Open Sans", 10F);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(101)))), ((int)(((byte)(189)))));
-            this.label8.Location = new System.Drawing.Point(45, 17);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(125, 23);
-            this.label8.TabIndex = 40;
-            this.label8.Text = "Eliminar riesgo";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.label1.Location = new System.Drawing.Point(511, 126);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(270, 22);
-            this.label1.TabIndex = 81;
-            this.label1.Text = "Valores de Probabilidad e Impacto";
-            // 
-            // label26
-            // 
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Open Sans Semibold", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(114)))), ((int)(((byte)(88)))));
-            this.label26.Location = new System.Drawing.Point(10, 89);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(12, 16);
-            this.label26.TabIndex = 80;
-            this.label26.Text = "*";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label23
-            // 
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Open Sans Semibold", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(114)))), ((int)(((byte)(88)))));
-            this.label23.Location = new System.Drawing.Point(10, 14);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(12, 16);
-            this.label23.TabIndex = 79;
-            this.label23.Text = "*";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtRiesgoResultadoRespuesta
-            // 
-            this.txtRiesgoResultadoRespuesta.BackColor = System.Drawing.SystemColors.Window;
-            this.txtRiesgoResultadoRespuesta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRiesgoResultadoRespuesta.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.impactoBindingSourceForm, "descripcion", true));
-            this.txtRiesgoResultadoRespuesta.Font = new System.Drawing.Font("Open Sans Light", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiesgoResultadoRespuesta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.txtRiesgoResultadoRespuesta.Location = new System.Drawing.Point(515, 45);
-            this.txtRiesgoResultadoRespuesta.Multiline = true;
-            this.txtRiesgoResultadoRespuesta.Name = "txtRiesgoResultadoRespuesta";
-            this.txtRiesgoResultadoRespuesta.Size = new System.Drawing.Size(189, 66);
-            this.txtRiesgoResultadoRespuesta.TabIndex = 77;
-            // 
-            // impactoBindingSourceForm
-            // 
-            this.impactoBindingSourceForm.DataSource = typeof(PRC.Model.Impacto);
-            // 
-            // lblRiesgoResultadoRespuesta
-            // 
-            this.lblRiesgoResultadoRespuesta.AutoSize = true;
-            this.lblRiesgoResultadoRespuesta.BackColor = System.Drawing.Color.Transparent;
-            this.lblRiesgoResultadoRespuesta.Font = new System.Drawing.Font("Open Sans", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRiesgoResultadoRespuesta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblRiesgoResultadoRespuesta.Location = new System.Drawing.Point(508, 14);
-            this.lblRiesgoResultadoRespuesta.Name = "lblRiesgoResultadoRespuesta";
-            this.lblRiesgoResultadoRespuesta.Size = new System.Drawing.Size(210, 22);
-            this.lblRiesgoResultadoRespuesta.TabIndex = 76;
-            this.lblRiesgoResultadoRespuesta.Text = "Resultado de la respuesta:";
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.SystemColors.Window;
-            this.panel25.Controls.Add(this.splitter86);
-            this.panel25.Controls.Add(this.splitter87);
-            this.panel25.Controls.Add(this.splitter88);
-            this.panel25.Controls.Add(this.splitter89);
-            this.panel25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.panel25.Location = new System.Drawing.Point(512, 42);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(193, 72);
-            this.panel25.TabIndex = 78;
-            // 
-            // splitter86
-            // 
-            this.splitter86.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter86.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter86.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter86.Location = new System.Drawing.Point(192, 1);
-            this.splitter86.MinSize = 0;
-            this.splitter86.Name = "splitter86";
-            this.splitter86.Size = new System.Drawing.Size(1, 70);
-            this.splitter86.TabIndex = 47;
-            this.splitter86.TabStop = false;
-            // 
-            // splitter87
-            // 
-            this.splitter87.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter87.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter87.Location = new System.Drawing.Point(0, 1);
-            this.splitter87.MinSize = 0;
-            this.splitter87.Name = "splitter87";
-            this.splitter87.Size = new System.Drawing.Size(1, 70);
-            this.splitter87.TabIndex = 46;
-            this.splitter87.TabStop = false;
-            // 
-            // splitter88
-            // 
-            this.splitter88.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter88.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter88.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter88.Location = new System.Drawing.Point(0, 0);
-            this.splitter88.MinSize = 0;
-            this.splitter88.Name = "splitter88";
-            this.splitter88.Size = new System.Drawing.Size(193, 1);
-            this.splitter88.TabIndex = 45;
-            this.splitter88.TabStop = false;
-            // 
-            // splitter89
-            // 
-            this.splitter89.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter89.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter89.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter89.Location = new System.Drawing.Point(0, 71);
-            this.splitter89.MinSize = 0;
-            this.splitter89.Name = "splitter89";
-            this.splitter89.Size = new System.Drawing.Size(193, 1);
-            this.splitter89.TabIndex = 44;
-            this.splitter89.TabStop = false;
-            // 
-            // txtRiesgoDisparadorRespuesta
-            // 
-            this.txtRiesgoDisparadorRespuesta.BackColor = System.Drawing.SystemColors.Window;
-            this.txtRiesgoDisparadorRespuesta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRiesgoDisparadorRespuesta.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.impactoBindingSourceForm, "descripcion", true));
-            this.txtRiesgoDisparadorRespuesta.Font = new System.Drawing.Font("Open Sans Light", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiesgoDisparadorRespuesta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.txtRiesgoDisparadorRespuesta.Location = new System.Drawing.Point(267, 372);
-            this.txtRiesgoDisparadorRespuesta.Multiline = true;
-            this.txtRiesgoDisparadorRespuesta.Name = "txtRiesgoDisparadorRespuesta";
-            this.txtRiesgoDisparadorRespuesta.Size = new System.Drawing.Size(189, 66);
-            this.txtRiesgoDisparadorRespuesta.TabIndex = 71;
-            // 
-            // lblRiesgoDisparadorRespuesta
-            // 
-            this.lblRiesgoDisparadorRespuesta.AutoSize = true;
-            this.lblRiesgoDisparadorRespuesta.BackColor = System.Drawing.Color.Transparent;
-            this.lblRiesgoDisparadorRespuesta.Font = new System.Drawing.Font("Open Sans", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRiesgoDisparadorRespuesta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblRiesgoDisparadorRespuesta.Location = new System.Drawing.Point(260, 340);
-            this.lblRiesgoDisparadorRespuesta.Name = "lblRiesgoDisparadorRespuesta";
-            this.lblRiesgoDisparadorRespuesta.Size = new System.Drawing.Size(220, 22);
-            this.lblRiesgoDisparadorRespuesta.TabIndex = 70;
-            this.lblRiesgoDisparadorRespuesta.Text = "Disparador de la respuesta:";
-            // 
-            // panel23
-            // 
-            this.panel23.BackColor = System.Drawing.SystemColors.Window;
-            this.panel23.Controls.Add(this.splitter78);
-            this.panel23.Controls.Add(this.splitter79);
-            this.panel23.Controls.Add(this.splitter80);
-            this.panel23.Controls.Add(this.splitter81);
-            this.panel23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.panel23.Location = new System.Drawing.Point(264, 369);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(193, 72);
-            this.panel23.TabIndex = 72;
-            // 
-            // splitter78
-            // 
-            this.splitter78.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter78.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter78.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter78.Location = new System.Drawing.Point(192, 1);
-            this.splitter78.MinSize = 0;
-            this.splitter78.Name = "splitter78";
-            this.splitter78.Size = new System.Drawing.Size(1, 70);
-            this.splitter78.TabIndex = 47;
-            this.splitter78.TabStop = false;
-            // 
-            // splitter79
-            // 
-            this.splitter79.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter79.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter79.Location = new System.Drawing.Point(0, 1);
-            this.splitter79.MinSize = 0;
-            this.splitter79.Name = "splitter79";
-            this.splitter79.Size = new System.Drawing.Size(1, 70);
-            this.splitter79.TabIndex = 46;
-            this.splitter79.TabStop = false;
-            // 
-            // splitter80
-            // 
-            this.splitter80.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter80.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter80.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter80.Location = new System.Drawing.Point(0, 0);
-            this.splitter80.MinSize = 0;
-            this.splitter80.Name = "splitter80";
-            this.splitter80.Size = new System.Drawing.Size(193, 1);
-            this.splitter80.TabIndex = 45;
-            this.splitter80.TabStop = false;
-            // 
-            // splitter81
-            // 
-            this.splitter81.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter81.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter81.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter81.Location = new System.Drawing.Point(0, 71);
-            this.splitter81.MinSize = 0;
-            this.splitter81.Name = "splitter81";
-            this.splitter81.Size = new System.Drawing.Size(193, 1);
-            this.splitter81.TabIndex = 44;
-            this.splitter81.TabStop = false;
-            // 
-            // txtRiesgoDescRespuesta
-            // 
-            this.txtRiesgoDescRespuesta.BackColor = System.Drawing.SystemColors.Window;
-            this.txtRiesgoDescRespuesta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRiesgoDescRespuesta.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.impactoBindingSourceForm, "descripcion", true));
-            this.txtRiesgoDescRespuesta.Font = new System.Drawing.Font("Open Sans Light", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiesgoDescRespuesta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.txtRiesgoDescRespuesta.Location = new System.Drawing.Point(267, 242);
-            this.txtRiesgoDescRespuesta.Multiline = true;
-            this.txtRiesgoDescRespuesta.Name = "txtRiesgoDescRespuesta";
-            this.txtRiesgoDescRespuesta.Size = new System.Drawing.Size(189, 66);
-            this.txtRiesgoDescRespuesta.TabIndex = 68;
-            // 
-            // lblRiesgoDescRespuesta
-            // 
-            this.lblRiesgoDescRespuesta.AutoSize = true;
-            this.lblRiesgoDescRespuesta.BackColor = System.Drawing.Color.Transparent;
-            this.lblRiesgoDescRespuesta.Font = new System.Drawing.Font("Open Sans", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRiesgoDescRespuesta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblRiesgoDescRespuesta.Location = new System.Drawing.Point(260, 210);
-            this.lblRiesgoDescRespuesta.Name = "lblRiesgoDescRespuesta";
-            this.lblRiesgoDescRespuesta.Size = new System.Drawing.Size(224, 22);
-            this.lblRiesgoDescRespuesta.TabIndex = 67;
-            this.lblRiesgoDescRespuesta.Text = "Descripción de la respuesta:";
-            // 
-            // panel22
-            // 
-            this.panel22.BackColor = System.Drawing.SystemColors.Window;
-            this.panel22.Controls.Add(this.splitter74);
-            this.panel22.Controls.Add(this.splitter75);
-            this.panel22.Controls.Add(this.splitter76);
-            this.panel22.Controls.Add(this.splitter77);
-            this.panel22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.panel22.Location = new System.Drawing.Point(264, 239);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(193, 72);
-            this.panel22.TabIndex = 69;
-            // 
-            // splitter74
-            // 
-            this.splitter74.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter74.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter74.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter74.Location = new System.Drawing.Point(192, 1);
-            this.splitter74.MinSize = 0;
-            this.splitter74.Name = "splitter74";
-            this.splitter74.Size = new System.Drawing.Size(1, 70);
-            this.splitter74.TabIndex = 47;
-            this.splitter74.TabStop = false;
-            // 
-            // splitter75
-            // 
-            this.splitter75.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter75.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter75.Location = new System.Drawing.Point(0, 1);
-            this.splitter75.MinSize = 0;
-            this.splitter75.Name = "splitter75";
-            this.splitter75.Size = new System.Drawing.Size(1, 70);
-            this.splitter75.TabIndex = 46;
-            this.splitter75.TabStop = false;
-            // 
-            // splitter76
-            // 
-            this.splitter76.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter76.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter76.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter76.Location = new System.Drawing.Point(0, 0);
-            this.splitter76.MinSize = 0;
-            this.splitter76.Name = "splitter76";
-            this.splitter76.Size = new System.Drawing.Size(193, 1);
-            this.splitter76.TabIndex = 45;
-            this.splitter76.TabStop = false;
-            // 
-            // splitter77
-            // 
-            this.splitter77.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter77.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter77.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter77.Location = new System.Drawing.Point(0, 71);
-            this.splitter77.MinSize = 0;
-            this.splitter77.Name = "splitter77";
-            this.splitter77.Size = new System.Drawing.Size(193, 1);
-            this.splitter77.TabIndex = 44;
-            this.splitter77.TabStop = false;
-            // 
-            // lblRiesgoResultadoEsperado
-            // 
-            this.lblRiesgoResultadoEsperado.AutoSize = true;
-            this.lblRiesgoResultadoEsperado.BackColor = System.Drawing.Color.Transparent;
-            this.lblRiesgoResultadoEsperado.Font = new System.Drawing.Font("Open Sans", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRiesgoResultadoEsperado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblRiesgoResultadoEsperado.Location = new System.Drawing.Point(260, 13);
-            this.lblRiesgoResultadoEsperado.Name = "lblRiesgoResultadoEsperado";
-            this.lblRiesgoResultadoEsperado.Size = new System.Drawing.Size(166, 22);
-            this.lblRiesgoResultadoEsperado.TabIndex = 64;
-            this.lblRiesgoResultadoEsperado.Text = "Resultado esperado:";
-            // 
-            // panel20
-            // 
-            this.panel20.BackColor = System.Drawing.SystemColors.Window;
-            this.panel20.Controls.Add(this.splitter65);
-            this.panel20.Controls.Add(this.splitter66);
-            this.panel20.Controls.Add(this.splitter67);
-            this.panel20.Controls.Add(this.splitter68);
-            this.panel20.Controls.Add(this.txtRiesgoResultadoEsperado);
-            this.panel20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.panel20.Location = new System.Drawing.Point(264, 44);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(193, 72);
-            this.panel20.TabIndex = 66;
-            // 
-            // splitter65
-            // 
-            this.splitter65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter65.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter65.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter65.Location = new System.Drawing.Point(192, 1);
-            this.splitter65.MinSize = 0;
-            this.splitter65.Name = "splitter65";
-            this.splitter65.Size = new System.Drawing.Size(1, 70);
-            this.splitter65.TabIndex = 47;
-            this.splitter65.TabStop = false;
-            // 
-            // splitter66
-            // 
-            this.splitter66.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter66.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter66.Location = new System.Drawing.Point(0, 1);
-            this.splitter66.MinSize = 0;
-            this.splitter66.Name = "splitter66";
-            this.splitter66.Size = new System.Drawing.Size(1, 70);
-            this.splitter66.TabIndex = 46;
-            this.splitter66.TabStop = false;
-            // 
-            // splitter67
-            // 
-            this.splitter67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter67.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter67.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter67.Location = new System.Drawing.Point(0, 0);
-            this.splitter67.MinSize = 0;
-            this.splitter67.Name = "splitter67";
-            this.splitter67.Size = new System.Drawing.Size(193, 1);
-            this.splitter67.TabIndex = 45;
-            this.splitter67.TabStop = false;
-            // 
-            // splitter68
-            // 
-            this.splitter68.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter68.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter68.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter68.Location = new System.Drawing.Point(0, 71);
-            this.splitter68.MinSize = 0;
-            this.splitter68.Name = "splitter68";
-            this.splitter68.Size = new System.Drawing.Size(193, 1);
-            this.splitter68.TabIndex = 44;
-            this.splitter68.TabStop = false;
-            // 
-            // txtRiesgoResultadoEsperado
-            // 
-            this.txtRiesgoResultadoEsperado.BackColor = System.Drawing.SystemColors.Window;
-            this.txtRiesgoResultadoEsperado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRiesgoResultadoEsperado.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.impactoBindingSourceForm, "descripcion", true));
-            this.txtRiesgoResultadoEsperado.Font = new System.Drawing.Font("Open Sans Light", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiesgoResultadoEsperado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.txtRiesgoResultadoEsperado.Location = new System.Drawing.Point(0, 3);
-            this.txtRiesgoResultadoEsperado.Multiline = true;
-            this.txtRiesgoResultadoEsperado.Name = "txtRiesgoResultadoEsperado";
-            this.txtRiesgoResultadoEsperado.Size = new System.Drawing.Size(189, 66);
-            this.txtRiesgoResultadoEsperado.TabIndex = 65;
-            // 
-            // lblRiesgoTipoRespuesta
-            // 
-            this.lblRiesgoTipoRespuesta.AutoSize = true;
-            this.lblRiesgoTipoRespuesta.BackColor = System.Drawing.Color.Transparent;
-            this.lblRiesgoTipoRespuesta.Font = new System.Drawing.Font("Open Sans", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRiesgoTipoRespuesta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblRiesgoTipoRespuesta.Location = new System.Drawing.Point(260, 139);
-            this.lblRiesgoTipoRespuesta.Name = "lblRiesgoTipoRespuesta";
-            this.lblRiesgoTipoRespuesta.Size = new System.Drawing.Size(150, 22);
-            this.lblRiesgoTipoRespuesta.TabIndex = 63;
-            this.lblRiesgoTipoRespuesta.Text = "Tipo de respuesta:";
-            // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.SystemColors.Window;
-            this.panel19.Controls.Add(this.splitter64);
-            this.panel19.Controls.Add(this.txtRiesgoTipoRespuesta);
-            this.panel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.panel19.Location = new System.Drawing.Point(264, 166);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(192, 24);
-            this.panel19.TabIndex = 62;
-            // 
-            // splitter64
-            // 
-            this.splitter64.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter64.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter64.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter64.Location = new System.Drawing.Point(0, 23);
-            this.splitter64.MinSize = 0;
-            this.splitter64.Name = "splitter64";
-            this.splitter64.Size = new System.Drawing.Size(192, 1);
-            this.splitter64.TabIndex = 44;
-            this.splitter64.TabStop = false;
-            // 
-            // txtRiesgoTipoRespuesta
-            // 
-            this.txtRiesgoTipoRespuesta.BackColor = System.Drawing.SystemColors.Window;
-            this.txtRiesgoTipoRespuesta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRiesgoTipoRespuesta.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.impactoBindingSourceForm, "categoria", true));
-            this.txtRiesgoTipoRespuesta.Font = new System.Drawing.Font("Open Sans", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiesgoTipoRespuesta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.txtRiesgoTipoRespuesta.Location = new System.Drawing.Point(3, 1);
-            this.txtRiesgoTipoRespuesta.Multiline = true;
-            this.txtRiesgoTipoRespuesta.Name = "txtRiesgoTipoRespuesta";
-            this.txtRiesgoTipoRespuesta.Size = new System.Drawing.Size(186, 23);
-            this.txtRiesgoTipoRespuesta.TabIndex = 18;
-            // 
-            // lblRiesgoValorImpacto
-            // 
-            this.lblRiesgoValorImpacto.AutoSize = true;
-            this.lblRiesgoValorImpacto.BackColor = System.Drawing.Color.Transparent;
-            this.lblRiesgoValorImpacto.Font = new System.Drawing.Font("Open Sans", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRiesgoValorImpacto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblRiesgoValorImpacto.Location = new System.Drawing.Point(700, 159);
-            this.lblRiesgoValorImpacto.Name = "lblRiesgoValorImpacto";
-            this.lblRiesgoValorImpacto.Size = new System.Drawing.Size(76, 22);
-            this.lblRiesgoValorImpacto.TabIndex = 61;
-            this.lblRiesgoValorImpacto.Text = "Impacto:";
-            // 
-            // cbxRiesgoValorImpacto
-            // 
-            this.cbxRiesgoValorImpacto.BackColor = System.Drawing.Color.White;
-            this.cbxRiesgoValorImpacto.DataSource = this.impactoBindingSource;
-            this.cbxRiesgoValorImpacto.DisplayMember = "valor";
-            this.cbxRiesgoValorImpacto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxRiesgoValorImpacto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbxRiesgoValorImpacto.Font = new System.Drawing.Font("Open Sans", 8.5F);
-            this.cbxRiesgoValorImpacto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.cbxRiesgoValorImpacto.FormattingEnabled = true;
-            this.cbxRiesgoValorImpacto.Location = new System.Drawing.Point(774, 156);
-            this.cbxRiesgoValorImpacto.MaxDropDownItems = 30;
-            this.cbxRiesgoValorImpacto.Name = "cbxRiesgoValorImpacto";
-            this.cbxRiesgoValorImpacto.Size = new System.Drawing.Size(61, 27);
-            this.cbxRiesgoValorImpacto.TabIndex = 60;
-            // 
-            // impactoBindingSource
-            // 
-            this.impactoBindingSource.DataSource = typeof(PRC.Model.Impacto);
-            // 
-            // lblRiesgoValorProbabilidad
-            // 
-            this.lblRiesgoValorProbabilidad.AutoSize = true;
-            this.lblRiesgoValorProbabilidad.BackColor = System.Drawing.Color.Transparent;
-            this.lblRiesgoValorProbabilidad.Font = new System.Drawing.Font("Open Sans", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRiesgoValorProbabilidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblRiesgoValorProbabilidad.Location = new System.Drawing.Point(511, 159);
-            this.lblRiesgoValorProbabilidad.Name = "lblRiesgoValorProbabilidad";
-            this.lblRiesgoValorProbabilidad.Size = new System.Drawing.Size(111, 22);
-            this.lblRiesgoValorProbabilidad.TabIndex = 59;
-            this.lblRiesgoValorProbabilidad.Text = "Probabilidad:";
-            // 
-            // cbxRiesgoValorProbabilidad
-            // 
-            this.cbxRiesgoValorProbabilidad.BackColor = System.Drawing.Color.White;
-            this.cbxRiesgoValorProbabilidad.DataSource = this.probabilidadBindingSource;
-            this.cbxRiesgoValorProbabilidad.DisplayMember = "valor";
-            this.cbxRiesgoValorProbabilidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxRiesgoValorProbabilidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbxRiesgoValorProbabilidad.Font = new System.Drawing.Font("Open Sans", 8.5F);
-            this.cbxRiesgoValorProbabilidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.cbxRiesgoValorProbabilidad.FormattingEnabled = true;
-            this.cbxRiesgoValorProbabilidad.Location = new System.Drawing.Point(621, 156);
-            this.cbxRiesgoValorProbabilidad.MaxDropDownItems = 30;
-            this.cbxRiesgoValorProbabilidad.Name = "cbxRiesgoValorProbabilidad";
-            this.cbxRiesgoValorProbabilidad.Size = new System.Drawing.Size(61, 27);
-            this.cbxRiesgoValorProbabilidad.TabIndex = 58;
-            // 
-            // txtRiesgoDisparador
-            // 
-            this.txtRiesgoDisparador.BackColor = System.Drawing.SystemColors.Window;
-            this.txtRiesgoDisparador.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRiesgoDisparador.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.impactoBindingSourceForm, "descripcion", true));
-            this.txtRiesgoDisparador.Font = new System.Drawing.Font("Open Sans Light", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiesgoDisparador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.txtRiesgoDisparador.Location = new System.Drawing.Point(33, 372);
-            this.txtRiesgoDisparador.Multiline = true;
-            this.txtRiesgoDisparador.Name = "txtRiesgoDisparador";
-            this.txtRiesgoDisparador.Size = new System.Drawing.Size(189, 66);
-            this.txtRiesgoDisparador.TabIndex = 56;
-            // 
-            // lblRiesgoDisparador
-            // 
-            this.lblRiesgoDisparador.AutoSize = true;
-            this.lblRiesgoDisparador.BackColor = System.Drawing.Color.Transparent;
-            this.lblRiesgoDisparador.Font = new System.Drawing.Font("Open Sans", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRiesgoDisparador.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblRiesgoDisparador.Location = new System.Drawing.Point(26, 340);
-            this.lblRiesgoDisparador.Name = "lblRiesgoDisparador";
-            this.lblRiesgoDisparador.Size = new System.Drawing.Size(178, 22);
-            this.lblRiesgoDisparador.TabIndex = 55;
-            this.lblRiesgoDisparador.Text = "Disparador del riesgo:";
-            // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.SystemColors.Window;
-            this.panel18.Controls.Add(this.splitter51);
-            this.panel18.Controls.Add(this.splitter52);
-            this.panel18.Controls.Add(this.splitter53);
-            this.panel18.Controls.Add(this.splitter63);
-            this.panel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.panel18.Location = new System.Drawing.Point(30, 369);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(193, 72);
-            this.panel18.TabIndex = 57;
-            // 
-            // splitter51
-            // 
-            this.splitter51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter51.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter51.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter51.Location = new System.Drawing.Point(192, 1);
-            this.splitter51.MinSize = 0;
-            this.splitter51.Name = "splitter51";
-            this.splitter51.Size = new System.Drawing.Size(1, 70);
-            this.splitter51.TabIndex = 47;
-            this.splitter51.TabStop = false;
-            // 
-            // splitter52
-            // 
-            this.splitter52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter52.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter52.Location = new System.Drawing.Point(0, 1);
-            this.splitter52.MinSize = 0;
-            this.splitter52.Name = "splitter52";
-            this.splitter52.Size = new System.Drawing.Size(1, 70);
-            this.splitter52.TabIndex = 46;
-            this.splitter52.TabStop = false;
-            // 
-            // splitter53
-            // 
-            this.splitter53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter53.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter53.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter53.Location = new System.Drawing.Point(0, 0);
-            this.splitter53.MinSize = 0;
-            this.splitter53.Name = "splitter53";
-            this.splitter53.Size = new System.Drawing.Size(193, 1);
-            this.splitter53.TabIndex = 45;
-            this.splitter53.TabStop = false;
-            // 
-            // splitter63
-            // 
-            this.splitter63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter63.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter63.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter63.Location = new System.Drawing.Point(0, 71);
-            this.splitter63.MinSize = 0;
-            this.splitter63.Name = "splitter63";
-            this.splitter63.Size = new System.Drawing.Size(193, 1);
-            this.splitter63.TabIndex = 44;
-            this.splitter63.TabStop = false;
-            // 
-            // lblRiesgoEncargadoRespuesta
-            // 
-            this.lblRiesgoEncargadoRespuesta.AutoSize = true;
-            this.lblRiesgoEncargadoRespuesta.BackColor = System.Drawing.Color.Transparent;
-            this.lblRiesgoEncargadoRespuesta.Font = new System.Drawing.Font("Open Sans", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRiesgoEncargadoRespuesta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblRiesgoEncargadoRespuesta.Location = new System.Drawing.Point(23, 276);
-            this.lblRiesgoEncargadoRespuesta.Name = "lblRiesgoEncargadoRespuesta";
-            this.lblRiesgoEncargadoRespuesta.Size = new System.Drawing.Size(215, 22);
-            this.lblRiesgoEncargadoRespuesta.TabIndex = 54;
-            this.lblRiesgoEncargadoRespuesta.Text = "Encargado de la respuesta:";
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.SystemColors.Window;
-            this.panel11.Controls.Add(this.splitter11);
-            this.panel11.Controls.Add(this.txtRiesgoEncargadoRespuesta);
-            this.panel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.panel11.Location = new System.Drawing.Point(27, 303);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(192, 24);
-            this.panel11.TabIndex = 53;
-            // 
-            // splitter11
-            // 
-            this.splitter11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter11.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter11.Location = new System.Drawing.Point(0, 23);
-            this.splitter11.MinSize = 0;
-            this.splitter11.Name = "splitter11";
-            this.splitter11.Size = new System.Drawing.Size(192, 1);
-            this.splitter11.TabIndex = 44;
-            this.splitter11.TabStop = false;
-            // 
-            // txtRiesgoEncargadoRespuesta
-            // 
-            this.txtRiesgoEncargadoRespuesta.BackColor = System.Drawing.SystemColors.Window;
-            this.txtRiesgoEncargadoRespuesta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRiesgoEncargadoRespuesta.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.impactoBindingSourceForm, "categoria", true));
-            this.txtRiesgoEncargadoRespuesta.Font = new System.Drawing.Font("Open Sans", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiesgoEncargadoRespuesta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.txtRiesgoEncargadoRespuesta.Location = new System.Drawing.Point(3, 1);
-            this.txtRiesgoEncargadoRespuesta.Multiline = true;
-            this.txtRiesgoEncargadoRespuesta.Name = "txtRiesgoEncargadoRespuesta";
-            this.txtRiesgoEncargadoRespuesta.Size = new System.Drawing.Size(186, 23);
-            this.txtRiesgoEncargadoRespuesta.TabIndex = 18;
-            // 
-            // splitter50
-            // 
-            this.splitter50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter50.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter50.Location = new System.Drawing.Point(1, 0);
-            this.splitter50.MinSize = 0;
-            this.splitter50.Name = "splitter50";
-            this.splitter50.Size = new System.Drawing.Size(1, 454);
-            this.splitter50.TabIndex = 52;
-            this.splitter50.TabStop = false;
-            // 
-            // lblRiesgoEncargadoMonitoreo
-            // 
-            this.lblRiesgoEncargadoMonitoreo.AutoSize = true;
-            this.lblRiesgoEncargadoMonitoreo.BackColor = System.Drawing.Color.Transparent;
-            this.lblRiesgoEncargadoMonitoreo.Font = new System.Drawing.Font("Open Sans", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRiesgoEncargadoMonitoreo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblRiesgoEncargadoMonitoreo.Location = new System.Drawing.Point(23, 206);
-            this.lblRiesgoEncargadoMonitoreo.Name = "lblRiesgoEncargadoMonitoreo";
-            this.lblRiesgoEncargadoMonitoreo.Size = new System.Drawing.Size(203, 22);
-            this.lblRiesgoEncargadoMonitoreo.TabIndex = 51;
-            this.lblRiesgoEncargadoMonitoreo.Text = "Encargado de monitoreo:";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Window;
-            this.panel2.Controls.Add(this.splitter10);
-            this.panel2.Controls.Add(this.txtRiesgoEncargadoMonitoreo);
-            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.panel2.Location = new System.Drawing.Point(27, 233);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(192, 24);
-            this.panel2.TabIndex = 47;
-            // 
-            // splitter10
-            // 
-            this.splitter10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter10.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter10.Location = new System.Drawing.Point(0, 23);
-            this.splitter10.MinSize = 0;
-            this.splitter10.Name = "splitter10";
-            this.splitter10.Size = new System.Drawing.Size(192, 1);
-            this.splitter10.TabIndex = 44;
-            this.splitter10.TabStop = false;
-            // 
-            // txtRiesgoEncargadoMonitoreo
-            // 
-            this.txtRiesgoEncargadoMonitoreo.BackColor = System.Drawing.SystemColors.Window;
-            this.txtRiesgoEncargadoMonitoreo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRiesgoEncargadoMonitoreo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.impactoBindingSourceForm, "categoria", true));
-            this.txtRiesgoEncargadoMonitoreo.Font = new System.Drawing.Font("Open Sans", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiesgoEncargadoMonitoreo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.txtRiesgoEncargadoMonitoreo.Location = new System.Drawing.Point(3, 1);
-            this.txtRiesgoEncargadoMonitoreo.Multiline = true;
-            this.txtRiesgoEncargadoMonitoreo.Name = "txtRiesgoEncargadoMonitoreo";
-            this.txtRiesgoEncargadoMonitoreo.Size = new System.Drawing.Size(186, 23);
-            this.txtRiesgoEncargadoMonitoreo.TabIndex = 18;
-            // 
-            // btnRiesgoCancelar
-            // 
-            this.btnRiesgoCancelar.BackColor = System.Drawing.Color.White;
-            this.btnRiesgoCancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.btnRiesgoCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnRiesgoCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnRiesgoCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRiesgoCancelar.Font = new System.Drawing.Font("Open Sans", 8.25F);
-            this.btnRiesgoCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.btnRiesgoCancelar.Location = new System.Drawing.Point(643, 410);
-            this.btnRiesgoCancelar.Name = "btnRiesgoCancelar";
-            this.btnRiesgoCancelar.Size = new System.Drawing.Size(88, 31);
-            this.btnRiesgoCancelar.TabIndex = 27;
-            this.btnRiesgoCancelar.Text = "Cancelar";
-            this.btnRiesgoCancelar.UseVisualStyleBackColor = false;
-            this.btnRiesgoCancelar.Click += new System.EventHandler(this.btnRiesgoCancelar_Click);
-            // 
-            // txtRiesgoDescripcion
-            // 
-            this.txtRiesgoDescripcion.BackColor = System.Drawing.SystemColors.Window;
-            this.txtRiesgoDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRiesgoDescripcion.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.impactoBindingSourceForm, "descripcion", true));
-            this.txtRiesgoDescripcion.Font = new System.Drawing.Font("Open Sans Light", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiesgoDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.txtRiesgoDescripcion.Location = new System.Drawing.Point(27, 121);
-            this.txtRiesgoDescripcion.Multiline = true;
-            this.txtRiesgoDescripcion.Name = "txtRiesgoDescripcion";
-            this.txtRiesgoDescripcion.Size = new System.Drawing.Size(189, 66);
-            this.txtRiesgoDescripcion.TabIndex = 23;
-            // 
-            // lblRiesgoDescripcion
-            // 
-            this.lblRiesgoDescripcion.AutoSize = true;
-            this.lblRiesgoDescripcion.BackColor = System.Drawing.Color.Transparent;
-            this.lblRiesgoDescripcion.Font = new System.Drawing.Font("Open Sans", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRiesgoDescripcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblRiesgoDescripcion.Location = new System.Drawing.Point(20, 89);
-            this.lblRiesgoDescripcion.Name = "lblRiesgoDescripcion";
-            this.lblRiesgoDescripcion.Size = new System.Drawing.Size(104, 22);
-            this.lblRiesgoDescripcion.TabIndex = 22;
-            this.lblRiesgoDescripcion.Text = "Descripción:";
-            // 
-            // splitter56
-            // 
-            this.splitter56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter56.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter56.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter56.Location = new System.Drawing.Point(855, 0);
-            this.splitter56.MinSize = 0;
-            this.splitter56.Name = "splitter56";
-            this.splitter56.Size = new System.Drawing.Size(1, 454);
-            this.splitter56.TabIndex = 20;
-            this.splitter56.TabStop = false;
-            // 
-            // btnRiesgoAgregar
-            // 
-            this.btnRiesgoAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.btnRiesgoAgregar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnRiesgoAgregar.FlatAppearance.BorderSize = 0;
-            this.btnRiesgoAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(82)))), ((int)(((byte)(155)))));
-            this.btnRiesgoAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(54)))), ((int)(((byte)(102)))));
-            this.btnRiesgoAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRiesgoAgregar.Font = new System.Drawing.Font("Open Sans", 8.25F);
-            this.btnRiesgoAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnRiesgoAgregar.Location = new System.Drawing.Point(742, 410);
-            this.btnRiesgoAgregar.Name = "btnRiesgoAgregar";
-            this.btnRiesgoAgregar.Size = new System.Drawing.Size(88, 31);
-            this.btnRiesgoAgregar.TabIndex = 12;
-            this.btnRiesgoAgregar.Text = "Agregar";
-            this.btnRiesgoAgregar.UseVisualStyleBackColor = false;
-            this.btnRiesgoAgregar.Click += new System.EventHandler(this.btnRiesgoAgregar_Click);
-            // 
-            // splitter57
-            // 
-            this.splitter57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter57.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter57.Location = new System.Drawing.Point(0, 0);
-            this.splitter57.MinSize = 0;
-            this.splitter57.Name = "splitter57";
-            this.splitter57.Size = new System.Drawing.Size(1, 454);
-            this.splitter57.TabIndex = 19;
-            this.splitter57.TabStop = false;
-            // 
-            // lblRiesgoCategoria
-            // 
-            this.lblRiesgoCategoria.AutoSize = true;
-            this.lblRiesgoCategoria.BackColor = System.Drawing.Color.Transparent;
-            this.lblRiesgoCategoria.Font = new System.Drawing.Font("Open Sans", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRiesgoCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.lblRiesgoCategoria.Location = new System.Drawing.Point(20, 13);
-            this.lblRiesgoCategoria.Name = "lblRiesgoCategoria";
-            this.lblRiesgoCategoria.Size = new System.Drawing.Size(87, 22);
-            this.lblRiesgoCategoria.TabIndex = 17;
-            this.lblRiesgoCategoria.Text = "Categoría:";
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.SystemColors.Window;
-            this.panel16.Controls.Add(this.splitter59);
-            this.panel16.Controls.Add(this.splitter60);
-            this.panel16.Controls.Add(this.splitter61);
-            this.panel16.Controls.Add(this.splitter62);
-            this.panel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(65)))));
-            this.panel16.Location = new System.Drawing.Point(24, 118);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(193, 72);
-            this.panel16.TabIndex = 47;
-            // 
-            // splitter59
-            // 
-            this.splitter59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter59.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter59.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter59.Location = new System.Drawing.Point(192, 1);
-            this.splitter59.MinSize = 0;
-            this.splitter59.Name = "splitter59";
-            this.splitter59.Size = new System.Drawing.Size(1, 70);
-            this.splitter59.TabIndex = 47;
-            this.splitter59.TabStop = false;
-            // 
-            // splitter60
-            // 
-            this.splitter60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter60.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter60.Location = new System.Drawing.Point(0, 1);
-            this.splitter60.MinSize = 0;
-            this.splitter60.Name = "splitter60";
-            this.splitter60.Size = new System.Drawing.Size(1, 70);
-            this.splitter60.TabIndex = 46;
-            this.splitter60.TabStop = false;
-            // 
-            // splitter61
-            // 
-            this.splitter61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter61.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter61.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter61.Location = new System.Drawing.Point(0, 0);
-            this.splitter61.MinSize = 0;
-            this.splitter61.Name = "splitter61";
-            this.splitter61.Size = new System.Drawing.Size(193, 1);
-            this.splitter61.TabIndex = 45;
-            this.splitter61.TabStop = false;
-            // 
-            // splitter62
-            // 
-            this.splitter62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter62.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter62.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter62.Location = new System.Drawing.Point(0, 71);
-            this.splitter62.MinSize = 0;
-            this.splitter62.Name = "splitter62";
-            this.splitter62.Size = new System.Drawing.Size(193, 1);
-            this.splitter62.TabIndex = 44;
-            this.splitter62.TabStop = false;
-            // 
-            // splitter69
-            // 
-            this.splitter69.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.splitter69.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter69.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter69.Location = new System.Drawing.Point(0, 495);
-            this.splitter69.MinSize = 0;
-            this.splitter69.Name = "splitter69";
-            this.splitter69.Size = new System.Drawing.Size(865, 1);
-            this.splitter69.TabIndex = 2;
-            this.splitter69.TabStop = false;
-            // 
-            // splitter70
-            // 
-            this.splitter70.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.splitter70.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter70.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter70.Location = new System.Drawing.Point(865, 1);
-            this.splitter70.MinSize = 0;
-            this.splitter70.Name = "splitter70";
-            this.splitter70.Size = new System.Drawing.Size(1, 495);
-            this.splitter70.TabIndex = 1;
-            this.splitter70.TabStop = false;
-            // 
-            // splitter71
-            // 
-            this.splitter71.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.splitter71.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter71.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter71.Location = new System.Drawing.Point(0, 0);
-            this.splitter71.MinSize = 0;
-            this.splitter71.Name = "splitter71";
-            this.splitter71.Size = new System.Drawing.Size(866, 1);
-            this.splitter71.TabIndex = 0;
-            this.splitter71.TabStop = false;
-            // 
-            // panel21
-            // 
-            this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.panel21.Controls.Add(this.label25);
-            this.panel21.Controls.Add(this.splitter72);
-            this.panel21.Controls.Add(this.splitter73);
-            this.panel21.Controls.Add(this.label24);
-            this.panel21.Location = new System.Drawing.Point(3, 3);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(856, 40);
-            this.panel21.TabIndex = 20;
-            // 
-            // label25
-            // 
-            this.label25.BackColor = System.Drawing.Color.Transparent;
-            this.label25.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label25.Image = global::PRC.UI.Properties.Resources.warning__1_2;
-            this.label25.Location = new System.Drawing.Point(327, 2);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(44, 38);
-            this.label25.TabIndex = 23;
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // splitter72
-            // 
-            this.splitter72.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter72.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter72.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter72.Location = new System.Drawing.Point(0, 39);
-            this.splitter72.MinSize = 0;
-            this.splitter72.Name = "splitter72";
-            this.splitter72.Size = new System.Drawing.Size(855, 1);
-            this.splitter72.TabIndex = 3;
-            this.splitter72.TabStop = false;
-            // 
-            // splitter73
-            // 
-            this.splitter73.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter73.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter73.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter73.Location = new System.Drawing.Point(855, 0);
-            this.splitter73.MinSize = 0;
-            this.splitter73.Name = "splitter73";
-            this.splitter73.Size = new System.Drawing.Size(1, 40);
-            this.splitter73.TabIndex = 2;
-            this.splitter73.TabStop = false;
-            // 
-            // label24
-            // 
-            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.label24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label24.Font = new System.Drawing.Font("Open Sans", 10.5F, System.Drawing.FontStyle.Bold);
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(367, 1);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(152, 39);
-            this.label24.TabIndex = 14;
-            this.label24.Text = "Agregar riesgo";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tabConfigProbImp
-            // 
-            this.tabConfigProbImp.BackColor = System.Drawing.Color.White;
-            this.tabConfigProbImp.Controls.Add(this.pnlTabBackground);
-            this.tabConfigProbImp.Location = new System.Drawing.Point(4, 37);
-            this.tabConfigProbImp.Name = "tabConfigProbImp";
-            this.tabConfigProbImp.Size = new System.Drawing.Size(858, 489);
-            this.tabConfigProbImp.TabIndex = 1;
-            this.tabConfigProbImp.Text = "Configuración de Probabilidad e Impacto";
-            // 
-            // pnlTabBackground
-            // 
-            this.pnlTabBackground.BackColor = System.Drawing.Color.White;
-            this.pnlTabBackground.Controls.Add(this.pnlEditarProbabilidad);
-            this.pnlTabBackground.Controls.Add(this.pnlEditarImpacto);
-            this.pnlTabBackground.Controls.Add(this.splitter16);
-            this.pnlTabBackground.Controls.Add(this.splitter12);
-            this.pnlTabBackground.Controls.Add(this.panel8);
-            this.pnlTabBackground.Controls.Add(this.panel10);
-            this.pnlTabBackground.Controls.Add(this.label10);
-            this.pnlTabBackground.Controls.Add(this.splitter13);
-            this.pnlTabBackground.Controls.Add(this.splitter14);
-            this.pnlTabBackground.Controls.Add(this.splitter15);
-            this.pnlTabBackground.Controls.Add(this.panel7);
-            this.pnlTabBackground.Controls.Add(this.panel9);
-            this.pnlTabBackground.Location = new System.Drawing.Point(-4, -3);
-            this.pnlTabBackground.Name = "pnlTabBackground";
-            this.pnlTabBackground.Size = new System.Drawing.Size(866, 496);
-            this.pnlTabBackground.TabIndex = 12;
+            // pnlTabBackground2
+            // 
+            this.pnlTabBackground2.BackColor = System.Drawing.Color.White;
+            this.pnlTabBackground2.Controls.Add(this.pnlEditarProbabilidad);
+            this.pnlTabBackground2.Controls.Add(this.pnlEditarImpacto);
+            this.pnlTabBackground2.Controls.Add(this.panel8);
+            this.pnlTabBackground2.Controls.Add(this.panel10);
+            this.pnlTabBackground2.Controls.Add(this.label10);
+            this.pnlTabBackground2.Controls.Add(this.panel7);
+            this.pnlTabBackground2.Controls.Add(this.panel9);
+            this.pnlTabBackground2.Location = new System.Drawing.Point(-4, -4);
+            this.pnlTabBackground2.Name = "pnlTabBackground2";
+            this.pnlTabBackground2.Size = new System.Drawing.Size(866, 496);
+            this.pnlTabBackground2.TabIndex = 13;
             // 
             // pnlEditarProbabilidad
             // 
@@ -3658,10 +2373,10 @@
             this.pnlEditarProbabilidad.Controls.Add(this.splitter46);
             this.pnlEditarProbabilidad.Controls.Add(this.lbIIconEditarProbabilidad);
             this.pnlEditarProbabilidad.Controls.Add(this.lblEditarProbabilidad);
-            this.pnlEditarProbabilidad.Location = new System.Drawing.Point(637, 258);
+            this.pnlEditarProbabilidad.Location = new System.Drawing.Point(639, 257);
             this.pnlEditarProbabilidad.Name = "pnlEditarProbabilidad";
             this.pnlEditarProbabilidad.Size = new System.Drawing.Size(222, 203);
-            this.pnlEditarProbabilidad.TabIndex = 45;
+            this.pnlEditarProbabilidad.TabIndex = 52;
             // 
             // btnEliminarProbabilidad
             // 
@@ -3680,7 +2395,6 @@
             this.btnEliminarProbabilidad.TabIndex = 45;
             this.btnEliminarProbabilidad.Text = "Eliminar";
             this.btnEliminarProbabilidad.UseVisualStyleBackColor = false;
-            this.btnEliminarProbabilidad.Click += new System.EventHandler(this.btnEliminarProbabilidad_Click);
             // 
             // splitter43
             // 
@@ -3708,6 +2422,10 @@
             this.listProbabilidades.Name = "listProbabilidades";
             this.listProbabilidades.Size = new System.Drawing.Size(192, 110);
             this.listProbabilidades.TabIndex = 28;
+            // 
+            // probabilidadBindingSource
+            // 
+            this.probabilidadBindingSource.DataSource = typeof(PRC.Model.Probabilidad);
             // 
             // splitter45
             // 
@@ -3764,10 +2482,10 @@
             this.pnlEditarImpacto.Controls.Add(this.splitter25);
             this.pnlEditarImpacto.Controls.Add(this.lblIconEditarImpacto);
             this.pnlEditarImpacto.Controls.Add(this.lblEditarImpacto);
-            this.pnlEditarImpacto.Location = new System.Drawing.Point(637, 42);
+            this.pnlEditarImpacto.Location = new System.Drawing.Point(639, 41);
             this.pnlEditarImpacto.Name = "pnlEditarImpacto";
             this.pnlEditarImpacto.Size = new System.Drawing.Size(222, 195);
-            this.pnlEditarImpacto.TabIndex = 44;
+            this.pnlEditarImpacto.TabIndex = 51;
             // 
             // splitter26
             // 
@@ -3798,7 +2516,6 @@
             this.btnEliminarImpacto.TabIndex = 33;
             this.btnEliminarImpacto.Text = "Eliminar";
             this.btnEliminarImpacto.UseVisualStyleBackColor = false;
-            this.btnEliminarImpacto.Click += new System.EventHandler(this.btnEliminarImpacto_Click);
             // 
             // listImpactos
             // 
@@ -3814,6 +2531,10 @@
             this.listImpactos.Name = "listImpactos";
             this.listImpactos.Size = new System.Drawing.Size(192, 110);
             this.listImpactos.TabIndex = 28;
+            // 
+            // impactoBindingSource
+            // 
+            this.impactoBindingSource.DataSource = typeof(PRC.Model.Impacto);
             // 
             // splitter24
             // 
@@ -3861,30 +2582,6 @@
             this.lblEditarImpacto.TabIndex = 40;
             this.lblEditarImpacto.Text = "Eliminar impacto";
             // 
-            // splitter16
-            // 
-            this.splitter16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter16.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter16.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter16.Location = new System.Drawing.Point(0, 493);
-            this.splitter16.MinSize = 0;
-            this.splitter16.Name = "splitter16";
-            this.splitter16.Size = new System.Drawing.Size(865, 1);
-            this.splitter16.TabIndex = 45;
-            this.splitter16.TabStop = false;
-            // 
-            // splitter12
-            // 
-            this.splitter12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
-            this.splitter12.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter12.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter12.Location = new System.Drawing.Point(0, 494);
-            this.splitter12.MinSize = 0;
-            this.splitter12.Name = "splitter12";
-            this.splitter12.Size = new System.Drawing.Size(865, 1);
-            this.splitter12.TabIndex = 44;
-            this.splitter12.TabStop = false;
-            // 
             // panel8
             // 
             this.panel8.Controls.Add(this.txtImpactoValor);
@@ -3898,10 +2595,10 @@
             this.panel8.Controls.Add(this.lblImpactoCategoria);
             this.panel8.Controls.Add(this.panel4);
             this.panel8.Controls.Add(this.panel5);
-            this.panel8.Location = new System.Drawing.Point(4, 42);
+            this.panel8.Location = new System.Drawing.Point(6, 41);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(298, 454);
-            this.panel8.TabIndex = 21;
+            this.panel8.TabIndex = 48;
             // 
             // txtImpactoValor
             // 
@@ -3919,6 +2616,10 @@
             0,
             0});
             // 
+            // impactoBindingSourceForm
+            // 
+            this.impactoBindingSourceForm.DataSource = typeof(PRC.Model.Impacto);
+            // 
             // btnImpactoCancelar
             // 
             this.btnImpactoCancelar.BackColor = System.Drawing.Color.White;
@@ -3934,7 +2635,6 @@
             this.btnImpactoCancelar.TabIndex = 27;
             this.btnImpactoCancelar.Text = "Cancelar";
             this.btnImpactoCancelar.UseVisualStyleBackColor = false;
-            this.btnImpactoCancelar.Click += new System.EventHandler(this.btnImpactoCancelar_Click);
             // 
             // lblImpactoValor
             // 
@@ -4001,7 +2701,6 @@
             this.btnImpactoAgregar.TabIndex = 12;
             this.btnImpactoAgregar.Text = "Agregar";
             this.btnImpactoAgregar.UseVisualStyleBackColor = false;
-            this.btnImpactoAgregar.Click += new System.EventHandler(this.btnImpactoAgregar_Click);
             // 
             // splitter19
             // 
@@ -4141,10 +2840,10 @@
             this.panel10.Controls.Add(this.label20);
             this.panel10.Controls.Add(this.panel6);
             this.panel10.Controls.Add(this.panel12);
-            this.panel10.Location = new System.Drawing.Point(301, 42);
+            this.panel10.Location = new System.Drawing.Point(303, 41);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(310, 454);
-            this.panel10.TabIndex = 27;
+            this.panel10.TabIndex = 50;
             // 
             // label19
             // 
@@ -4263,7 +2962,6 @@
             this.btnProbabilidadCancelar.TabIndex = 21;
             this.btnProbabilidadCancelar.Text = "Cancelar";
             this.btnProbabilidadCancelar.UseVisualStyleBackColor = false;
-            this.btnProbabilidadCancelar.Click += new System.EventHandler(this.btnProbabilidadCancelar_Click);
             // 
             // splitter23
             // 
@@ -4293,7 +2991,6 @@
             this.btnProbabilidadAgregar.TabIndex = 12;
             this.btnProbabilidadAgregar.Text = "Agregar";
             this.btnProbabilidadAgregar.UseVisualStyleBackColor = false;
-            this.btnProbabilidadAgregar.Click += new System.EventHandler(this.btnProbabilidadAgregar_Click);
             // 
             // txtProbabilidadCategoria
             // 
@@ -4434,48 +3131,12 @@
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Open Sans", 10.5F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(43, 3);
+            this.label10.Location = new System.Drawing.Point(45, 2);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(227, 38);
-            this.label10.TabIndex = 14;
+            this.label10.TabIndex = 46;
             this.label10.Text = "Agregar nuevo impacto";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // splitter13
-            // 
-            this.splitter13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.splitter13.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter13.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter13.Location = new System.Drawing.Point(0, 495);
-            this.splitter13.MinSize = 0;
-            this.splitter13.Name = "splitter13";
-            this.splitter13.Size = new System.Drawing.Size(865, 1);
-            this.splitter13.TabIndex = 2;
-            this.splitter13.TabStop = false;
-            // 
-            // splitter14
-            // 
-            this.splitter14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.splitter14.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter14.Location = new System.Drawing.Point(865, 1);
-            this.splitter14.MinSize = 0;
-            this.splitter14.Name = "splitter14";
-            this.splitter14.Size = new System.Drawing.Size(1, 495);
-            this.splitter14.TabIndex = 1;
-            this.splitter14.TabStop = false;
-            // 
-            // splitter15
-            // 
-            this.splitter15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.splitter15.Cursor = System.Windows.Forms.Cursors.Default;
-            this.splitter15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.splitter15.Location = new System.Drawing.Point(0, 0);
-            this.splitter15.MinSize = 0;
-            this.splitter15.Name = "splitter15";
-            this.splitter15.Size = new System.Drawing.Size(866, 1);
-            this.splitter15.TabIndex = 0;
-            this.splitter15.TabStop = false;
             // 
             // panel7
             // 
@@ -4483,10 +3144,10 @@
             this.panel7.Controls.Add(this.label3);
             this.panel7.Controls.Add(this.splitter18);
             this.panel7.Controls.Add(this.splitter17);
-            this.panel7.Location = new System.Drawing.Point(3, 3);
+            this.panel7.Location = new System.Drawing.Point(5, 2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(299, 40);
-            this.panel7.TabIndex = 20;
+            this.panel7.TabIndex = 47;
             // 
             // label3
             // 
@@ -4530,10 +3191,10 @@
             this.panel9.Controls.Add(this.label7);
             this.panel9.Controls.Add(this.splitter21);
             this.panel9.Controls.Add(this.splitter22);
-            this.panel9.Location = new System.Drawing.Point(301, 3);
+            this.panel9.Location = new System.Drawing.Point(303, 2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(310, 40);
-            this.panel9.TabIndex = 21;
+            this.panel9.TabIndex = 49;
             // 
             // label2
             // 
@@ -4582,6 +3243,28 @@
             this.splitter22.Size = new System.Drawing.Size(1, 40);
             this.splitter22.TabIndex = 2;
             this.splitter22.TabStop = false;
+            // 
+            // tabConfigProbImp
+            // 
+            this.tabConfigProbImp.BackColor = System.Drawing.Color.White;
+            this.tabConfigProbImp.Controls.Add(this.pnlTabBackground);
+            this.tabConfigProbImp.Location = new System.Drawing.Point(4, 37);
+            this.tabConfigProbImp.Name = "tabConfigProbImp";
+            this.tabConfigProbImp.Size = new System.Drawing.Size(858, 489);
+            this.tabConfigProbImp.TabIndex = 1;
+            this.tabConfigProbImp.Text = "Configuración de Probabilidad e Impacto";
+            // 
+            // pnlTabBackground
+            // 
+            this.pnlTabBackground.BackColor = System.Drawing.Color.White;
+            this.pnlTabBackground.Location = new System.Drawing.Point(-4, -3);
+            this.pnlTabBackground.Name = "pnlTabBackground";
+            this.pnlTabBackground.Size = new System.Drawing.Size(866, 496);
+            this.pnlTabBackground.TabIndex = 12;
+            // 
+            // riesgoBindingSource
+            // 
+            this.riesgoBindingSource.DataSource = typeof(PRC.Model.Riesgo);
             // 
             // pnlInfo
             // 
@@ -4767,7 +3450,127 @@
             this.lblExceptionMsg.Text = "Exception msg";
             this.lblExceptionMsg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // FRMRiesgos
+            // splitter15
+            // 
+            this.splitter15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.splitter15.Cursor = System.Windows.Forms.Cursors.Default;
+            this.splitter15.Dock = System.Windows.Forms.DockStyle.Top;
+            this.splitter15.Location = new System.Drawing.Point(0, 0);
+            this.splitter15.MinSize = 0;
+            this.splitter15.Name = "splitter15";
+            this.splitter15.Size = new System.Drawing.Size(866, 1);
+            this.splitter15.TabIndex = 0;
+            this.splitter15.TabStop = false;
+            // 
+            // splitter14
+            // 
+            this.splitter14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.splitter14.Cursor = System.Windows.Forms.Cursors.Default;
+            this.splitter14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.splitter14.Location = new System.Drawing.Point(865, 1);
+            this.splitter14.MinSize = 0;
+            this.splitter14.Name = "splitter14";
+            this.splitter14.Size = new System.Drawing.Size(1, 495);
+            this.splitter14.TabIndex = 1;
+            this.splitter14.TabStop = false;
+            // 
+            // splitter13
+            // 
+            this.splitter13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.splitter13.Cursor = System.Windows.Forms.Cursors.Default;
+            this.splitter13.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.splitter13.Location = new System.Drawing.Point(0, 495);
+            this.splitter13.MinSize = 0;
+            this.splitter13.Name = "splitter13";
+            this.splitter13.Size = new System.Drawing.Size(865, 1);
+            this.splitter13.TabIndex = 2;
+            this.splitter13.TabStop = false;
+            // 
+            // splitter12
+            // 
+            this.splitter12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.splitter12.Cursor = System.Windows.Forms.Cursors.Default;
+            this.splitter12.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.splitter12.Location = new System.Drawing.Point(0, 494);
+            this.splitter12.MinSize = 0;
+            this.splitter12.Name = "splitter12";
+            this.splitter12.Size = new System.Drawing.Size(865, 1);
+            this.splitter12.TabIndex = 44;
+            this.splitter12.TabStop = false;
+            // 
+            // splitter16
+            // 
+            this.splitter16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.splitter16.Cursor = System.Windows.Forms.Cursors.Default;
+            this.splitter16.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.splitter16.Location = new System.Drawing.Point(0, 493);
+            this.splitter16.MinSize = 0;
+            this.splitter16.Name = "splitter16";
+            this.splitter16.Size = new System.Drawing.Size(865, 1);
+            this.splitter16.TabIndex = 45;
+            this.splitter16.TabStop = false;
+            // 
+            // splitter71
+            // 
+            this.splitter71.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.splitter71.Cursor = System.Windows.Forms.Cursors.Default;
+            this.splitter71.Dock = System.Windows.Forms.DockStyle.Top;
+            this.splitter71.Location = new System.Drawing.Point(0, 0);
+            this.splitter71.MinSize = 0;
+            this.splitter71.Name = "splitter71";
+            this.splitter71.Size = new System.Drawing.Size(866, 1);
+            this.splitter71.TabIndex = 0;
+            this.splitter71.TabStop = false;
+            // 
+            // splitter70
+            // 
+            this.splitter70.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.splitter70.Cursor = System.Windows.Forms.Cursors.Default;
+            this.splitter70.Dock = System.Windows.Forms.DockStyle.Right;
+            this.splitter70.Location = new System.Drawing.Point(865, 1);
+            this.splitter70.MinSize = 0;
+            this.splitter70.Name = "splitter70";
+            this.splitter70.Size = new System.Drawing.Size(1, 495);
+            this.splitter70.TabIndex = 1;
+            this.splitter70.TabStop = false;
+            // 
+            // splitter69
+            // 
+            this.splitter69.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.splitter69.Cursor = System.Windows.Forms.Cursors.Default;
+            this.splitter69.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.splitter69.Location = new System.Drawing.Point(0, 495);
+            this.splitter69.MinSize = 0;
+            this.splitter69.Name = "splitter69";
+            this.splitter69.Size = new System.Drawing.Size(865, 1);
+            this.splitter69.TabIndex = 2;
+            this.splitter69.TabStop = false;
+            // 
+            // splitter55
+            // 
+            this.splitter55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.splitter55.Cursor = System.Windows.Forms.Cursors.Default;
+            this.splitter55.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.splitter55.Location = new System.Drawing.Point(0, 494);
+            this.splitter55.MinSize = 0;
+            this.splitter55.Name = "splitter55";
+            this.splitter55.Size = new System.Drawing.Size(865, 1);
+            this.splitter55.TabIndex = 44;
+            this.splitter55.TabStop = false;
+            // 
+            // splitter54
+            // 
+            this.splitter54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.splitter54.Cursor = System.Windows.Forms.Cursors.Default;
+            this.splitter54.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.splitter54.Location = new System.Drawing.Point(0, 493);
+            this.splitter54.MinSize = 0;
+            this.splitter54.Name = "splitter54";
+            this.splitter54.Size = new System.Drawing.Size(865, 1);
+            this.splitter54.TabIndex = 45;
+            this.splitter54.TabStop = false;
+            // 
+            // FRMEarnedValue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -4784,7 +3587,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.MaximizeBox = false;
-            this.Name = "FRMRiesgos";
+            this.Name = "FRMEarnedValue";
             this.Padding = new System.Windows.Forms.Padding(28, 105, 28, 35);
             this.Resizable = false;
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.AeroShadow;
@@ -4798,7 +3601,7 @@
             this.pnlBottomBar.ResumeLayout(false);
             this.tabControlFRM.ResumeLayout(false);
             this.tabAdministarRiesgos.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
+            this.pnlTabBackground3.ResumeLayout(false);
             this.pnlMPI.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
             this.panel31.ResumeLayout(false);
@@ -4835,38 +3638,17 @@
             this.pnlProbImpVal1_4.ResumeLayout(false);
             this.panel36.ResumeLayout(false);
             this.tabRiesgosConfig.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.probabilidadBindingSource)).EndInit();
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.riesgoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.impactoBindingSourceForm)).EndInit();
-            this.panel25.ResumeLayout(false);
-            this.panel23.ResumeLayout(false);
-            this.panel22.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
-            this.panel20.PerformLayout();
-            this.panel19.ResumeLayout(false);
-            this.panel19.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.impactoBindingSource)).EndInit();
-            this.panel18.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel16.ResumeLayout(false);
-            this.panel21.ResumeLayout(false);
-            this.tabConfigProbImp.ResumeLayout(false);
-            this.pnlTabBackground.ResumeLayout(false);
+            this.pnlTabBackground2.ResumeLayout(false);
             this.pnlEditarProbabilidad.ResumeLayout(false);
             this.pnlEditarProbabilidad.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.probabilidadBindingSource)).EndInit();
             this.pnlEditarImpacto.ResumeLayout(false);
             this.pnlEditarImpacto.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.impactoBindingSource)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtImpactoValor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.impactoBindingSourceForm)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -4879,6 +3661,8 @@
             this.panel12.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            this.tabConfigProbImp.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.riesgoBindingSource)).EndInit();
             this.pnlInfo.ResumeLayout(false);
             this.pnlExceptionMsg.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -4902,7 +3686,6 @@
         private System.Windows.Forms.Splitter splitter9;
         private System.Windows.Forms.Label lblLogoPRC;
         private MetroFramework.Controls.MetroTabControl tabControlFRM;
-        private System.Windows.Forms.TabPage tabConfigProbImp;
         private System.Windows.Forms.Label lblFRMTitle;
         private System.Windows.Forms.Label lblFRMLogo;
         private System.Windows.Forms.Label label5;
@@ -4927,78 +3710,6 @@
         private System.Windows.Forms.BindingSource impactoBindingSource;
         private System.Windows.Forms.BindingSource probabilidadBindingSource;
         private System.Windows.Forms.Splitter splitter27;
-        private System.Windows.Forms.Panel pnlTabBackground;
-        private System.Windows.Forms.Splitter splitter16;
-        private System.Windows.Forms.Splitter splitter12;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.NumericUpDown txtImpactoValor;
-        private System.Windows.Forms.Button btnImpactoCancelar;
-        private System.Windows.Forms.Label lblImpactoValor;
-        private System.Windows.Forms.TextBox txtImpactoDesc;
-        private System.Windows.Forms.Label lblImpactoDesc;
-        private System.Windows.Forms.Splitter splitter20;
-        private System.Windows.Forms.Button btnImpactoAgregar;
-        private System.Windows.Forms.Splitter splitter19;
-        private System.Windows.Forms.TextBox txtImpactoCategoria;
-        private System.Windows.Forms.Label lblImpactoCategoria;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.NumericUpDown txtProbabilidadRangoFin;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label lblProbabilidadRango;
-        private System.Windows.Forms.NumericUpDown txtProbabilidadValor;
-        private System.Windows.Forms.Label lblProbabilidadValor;
-        private System.Windows.Forms.TextBox txtProbabilidadDesc;
-        private System.Windows.Forms.Label lblProbabilidadDesc;
-        private System.Windows.Forms.Button btnProbabilidadCancelar;
-        private System.Windows.Forms.Splitter splitter23;
-        private System.Windows.Forms.Button btnProbabilidadAgregar;
-        private System.Windows.Forms.TextBox txtProbabilidadCategoria;
-        private System.Windows.Forms.Label lblProbabilidadCategoria;
-        private System.Windows.Forms.NumericUpDown txtProbabilidadRangoInicio;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Splitter splitter13;
-        private System.Windows.Forms.Splitter splitter14;
-        private System.Windows.Forms.Splitter splitter15;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Splitter splitter18;
-        private System.Windows.Forms.Splitter splitter17;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Splitter splitter21;
-        private System.Windows.Forms.Splitter splitter22;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Splitter splitter28;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Splitter splitter29;
-        private System.Windows.Forms.Splitter splitter30;
-        private System.Windows.Forms.Splitter splitter38;
-        private System.Windows.Forms.Splitter splitter31;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Splitter splitter39;
-        private System.Windows.Forms.Splitter splitter40;
-        private System.Windows.Forms.Splitter splitter41;
-        private System.Windows.Forms.Splitter splitter42;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Splitter splitter44;
-        private System.Windows.Forms.Panel pnlEditarProbabilidad;
-        private System.Windows.Forms.Splitter splitter43;
-        private System.Windows.Forms.ListBox listProbabilidades;
-        private System.Windows.Forms.Splitter splitter45;
-        private System.Windows.Forms.Splitter splitter46;
-        private System.Windows.Forms.Label lbIIconEditarProbabilidad;
-        private System.Windows.Forms.Label lblEditarProbabilidad;
-        private System.Windows.Forms.Panel pnlEditarImpacto;
-        private System.Windows.Forms.Splitter splitter26;
-        private System.Windows.Forms.ListBox listImpactos;
-        private System.Windows.Forms.Splitter splitter24;
-        private System.Windows.Forms.Splitter splitter25;
-        private System.Windows.Forms.Label lblIconEditarImpacto;
-        private System.Windows.Forms.Label lblEditarImpacto;
-        private System.Windows.Forms.Button btnEliminarImpacto;
         private System.Windows.Forms.Panel pnlExceptionMsg;
         private System.Windows.Forms.Splitter splitter47;
         private System.Windows.Forms.Splitter splitter48;
@@ -5007,100 +3718,8 @@
         private System.Windows.Forms.Label lblExceptionMsg;
         private System.Windows.Forms.Button btnExceptionMsgClose;
         private System.Windows.Forms.BindingSource impactoBindingSourceForm;
-        private System.Windows.Forms.Button btnEliminarProbabilidad;
-        private System.Windows.Forms.TabPage tabRiesgosConfig;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Splitter splitter54;
-        private System.Windows.Forms.Splitter splitter55;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Button btnRiesgoCancelar;
-        private System.Windows.Forms.TextBox txtRiesgoDescripcion;
-        private System.Windows.Forms.Label lblRiesgoDescripcion;
-        private System.Windows.Forms.Splitter splitter56;
-        private System.Windows.Forms.Button btnRiesgoAgregar;
-        private System.Windows.Forms.Splitter splitter57;
-        private System.Windows.Forms.Label lblRiesgoCategoria;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Splitter splitter59;
-        private System.Windows.Forms.Splitter splitter60;
-        private System.Windows.Forms.Splitter splitter61;
-        private System.Windows.Forms.Splitter splitter62;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Splitter splitter69;
-        private System.Windows.Forms.Splitter splitter70;
-        private System.Windows.Forms.Splitter splitter71;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Splitter splitter72;
-        private System.Windows.Forms.Splitter splitter73;
-        private System.Windows.Forms.Label lblRiesgoEncargadoRespuesta;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Splitter splitter11;
-        private System.Windows.Forms.TextBox txtRiesgoEncargadoRespuesta;
-        private System.Windows.Forms.Splitter splitter50;
-        private System.Windows.Forms.Label lblRiesgoEncargadoMonitoreo;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Splitter splitter10;
-        private System.Windows.Forms.TextBox txtRiesgoEncargadoMonitoreo;
-        private System.Windows.Forms.ComboBox cbxRiesgoValorProbabilidad;
-        private System.Windows.Forms.TextBox txtRiesgoDisparador;
-        private System.Windows.Forms.Label lblRiesgoDisparador;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Splitter splitter51;
-        private System.Windows.Forms.Splitter splitter52;
-        private System.Windows.Forms.Splitter splitter53;
-        private System.Windows.Forms.Splitter splitter63;
-        private System.Windows.Forms.Label lblRiesgoValorImpacto;
-        private System.Windows.Forms.ComboBox cbxRiesgoValorImpacto;
-        private System.Windows.Forms.Label lblRiesgoValorProbabilidad;
-        private System.Windows.Forms.Label lblRiesgoTipoRespuesta;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Splitter splitter64;
-        private System.Windows.Forms.TextBox txtRiesgoTipoRespuesta;
-        private System.Windows.Forms.TextBox txtRiesgoDescRespuesta;
-        private System.Windows.Forms.Label lblRiesgoDescRespuesta;
-        private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Splitter splitter74;
-        private System.Windows.Forms.Splitter splitter75;
-        private System.Windows.Forms.Splitter splitter76;
-        private System.Windows.Forms.Splitter splitter77;
-        private System.Windows.Forms.TextBox txtRiesgoResultadoEsperado;
-        private System.Windows.Forms.Label lblRiesgoResultadoEsperado;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Splitter splitter65;
-        private System.Windows.Forms.Splitter splitter66;
-        private System.Windows.Forms.Splitter splitter67;
-        private System.Windows.Forms.Splitter splitter68;
-        private System.Windows.Forms.TextBox txtRiesgoDisparadorRespuesta;
-        private System.Windows.Forms.Label lblRiesgoDisparadorRespuesta;
-        private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Splitter splitter78;
-        private System.Windows.Forms.Splitter splitter79;
-        private System.Windows.Forms.Splitter splitter80;
-        private System.Windows.Forms.Splitter splitter81;
-        private System.Windows.Forms.TextBox txtRiesgoResultadoRespuesta;
-        private System.Windows.Forms.Label lblRiesgoResultadoRespuesta;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Splitter splitter86;
-        private System.Windows.Forms.Splitter splitter87;
-        private System.Windows.Forms.Splitter splitter88;
-        private System.Windows.Forms.Splitter splitter89;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.Splitter splitter82;
-        private System.Windows.Forms.Button btnRiesgoEliminar;
-        private System.Windows.Forms.ListBox listRiesgos;
-        private System.Windows.Forms.Splitter splitter83;
-        private System.Windows.Forms.Splitter splitter84;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cbxRiesgoCategoria;
         private System.Windows.Forms.BindingSource riesgoBindingSource;
-        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Panel pnlTabBackground3;
         private System.Windows.Forms.Splitter splitter113;
         private System.Windows.Forms.Splitter splitter115;
         private System.Windows.Forms.Splitter splitter116;
@@ -5231,5 +3850,86 @@
         private System.Windows.Forms.Splitter splitter153;
         private System.Windows.Forms.Splitter splitter151;
         private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TabPage tabRiesgosConfig;
+        private System.Windows.Forms.Panel pnlTabBackground2;
+        private System.Windows.Forms.TabPage tabConfigProbImp;
+        private System.Windows.Forms.Panel pnlTabBackground;
+        private System.Windows.Forms.Splitter splitter15;
+        private System.Windows.Forms.Splitter splitter14;
+        private System.Windows.Forms.Splitter splitter13;
+        private System.Windows.Forms.Splitter splitter12;
+        private System.Windows.Forms.Splitter splitter16;
+        private System.Windows.Forms.Splitter splitter71;
+        private System.Windows.Forms.Splitter splitter70;
+        private System.Windows.Forms.Splitter splitter69;
+        private System.Windows.Forms.Splitter splitter55;
+        private System.Windows.Forms.Splitter splitter54;
+        private System.Windows.Forms.Panel pnlEditarProbabilidad;
+        private System.Windows.Forms.Button btnEliminarProbabilidad;
+        private System.Windows.Forms.Splitter splitter43;
+        private System.Windows.Forms.ListBox listProbabilidades;
+        private System.Windows.Forms.Splitter splitter45;
+        private System.Windows.Forms.Splitter splitter46;
+        private System.Windows.Forms.Label lbIIconEditarProbabilidad;
+        private System.Windows.Forms.Label lblEditarProbabilidad;
+        private System.Windows.Forms.Panel pnlEditarImpacto;
+        private System.Windows.Forms.Splitter splitter26;
+        private System.Windows.Forms.Button btnEliminarImpacto;
+        private System.Windows.Forms.ListBox listImpactos;
+        private System.Windows.Forms.Splitter splitter24;
+        private System.Windows.Forms.Splitter splitter25;
+        private System.Windows.Forms.Label lblIconEditarImpacto;
+        private System.Windows.Forms.Label lblEditarImpacto;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.NumericUpDown txtImpactoValor;
+        private System.Windows.Forms.Button btnImpactoCancelar;
+        private System.Windows.Forms.Label lblImpactoValor;
+        private System.Windows.Forms.TextBox txtImpactoDesc;
+        private System.Windows.Forms.Label lblImpactoDesc;
+        private System.Windows.Forms.Splitter splitter20;
+        private System.Windows.Forms.Button btnImpactoAgregar;
+        private System.Windows.Forms.Splitter splitter19;
+        private System.Windows.Forms.Label lblImpactoCategoria;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Splitter splitter28;
+        private System.Windows.Forms.TextBox txtImpactoCategoria;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Splitter splitter38;
+        private System.Windows.Forms.Splitter splitter31;
+        private System.Windows.Forms.Splitter splitter30;
+        private System.Windows.Forms.Splitter splitter29;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.NumericUpDown txtProbabilidadRangoFin;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblProbabilidadRango;
+        private System.Windows.Forms.NumericUpDown txtProbabilidadValor;
+        private System.Windows.Forms.Label lblProbabilidadValor;
+        private System.Windows.Forms.TextBox txtProbabilidadDesc;
+        private System.Windows.Forms.Label lblProbabilidadDesc;
+        private System.Windows.Forms.Button btnProbabilidadCancelar;
+        private System.Windows.Forms.Splitter splitter23;
+        private System.Windows.Forms.Button btnProbabilidadAgregar;
+        private System.Windows.Forms.TextBox txtProbabilidadCategoria;
+        private System.Windows.Forms.Label lblProbabilidadCategoria;
+        private System.Windows.Forms.NumericUpDown txtProbabilidadRangoInicio;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Splitter splitter39;
+        private System.Windows.Forms.Splitter splitter40;
+        private System.Windows.Forms.Splitter splitter41;
+        private System.Windows.Forms.Splitter splitter42;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Splitter splitter44;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Splitter splitter18;
+        private System.Windows.Forms.Splitter splitter17;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Splitter splitter21;
+        private System.Windows.Forms.Splitter splitter22;
     }
 }

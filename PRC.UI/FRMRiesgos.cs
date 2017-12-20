@@ -116,7 +116,6 @@ namespace PRC.UI
             drag = false;
         }
 
-        //MÉTODOS DEL TAB Configuración de Probabilidad e Impacto.
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -127,6 +126,8 @@ namespace PRC.UI
             this.WindowState = FormWindowState.Minimized;
         }
 
+
+        //MÉTODOS DEL TAB Configuración de Probabilidad e Impacto.
         private void btnImpactoAgregar_Click(object sender, EventArgs e)
         {
             Impacto impactoNuevo = new Impacto {
@@ -141,25 +142,6 @@ namespace PRC.UI
                 clearFieldsImpacto();
             } else {
                 throwException("Este impacto no puede ser agregado");
-            }
-        }
-
-        private void btnImpactoEditar_Click(object sender, EventArgs e)
-        {
-            //Impacto impactoEditado = new Impacto {
-            //    categoria = txtImpactoCategoria.Text,
-            //    descripcion = txtImpactoDesc.Text,
-            //    valor = Convert.ToInt32(txtImpactoValor.Value)
-            //};
-
-            //Impacto impactoEditado = ImpactoServices.getByCategoria(txtImpactoCategoria.Text);
-
-            //impactoEditado.descripcion = txtImpactoDesc.Text;
-
-            try {
-                ImpactoServices.update(impactoBindingSourceForm.Current as Impacto);
-            } catch (Exception ex) {
-                throwException("Este impacto no puede ser modificado");
             }
         }
 
@@ -229,16 +211,36 @@ namespace PRC.UI
         //    //impactoBindingSourceForm.DataSource = ImpactoServices.getByCategoria(listImpactos.GetItemText(listImpactos.SelectedItem));
         //}
 
+        //private void btnImpactoEditar_Click(object sender, EventArgs e)
+        //{
+        //    //Impacto impactoEditado = new Impacto {
+        //    //    categoria = txtImpactoCategoria.Text,
+        //    //    descripcion = txtImpactoDesc.Text,
+        //    //    valor = Convert.ToInt32(txtImpactoValor.Value)
+        //    //};
+
+        //    //Impacto impactoEditado = ImpactoServices.getByCategoria(txtImpactoCategoria.Text);
+
+        //    //impactoEditado.descripcion = txtImpactoDesc.Text;
+
+        //    try {
+        //        ImpactoServices.update(impactoBindingSourceForm.Current as Impacto);
+        //    } catch (Exception ex) {
+        //        throwException("Este impacto no puede ser modificado");
+        //    }
+        //}
+
         //MÉTODOS DEL TAB Configuración de Riesgos.
+
         private void btnRiesgoAgregar_Click(object sender, EventArgs e)
         {
-            //throwException(cbxRiesgoValorImpacto.GetItemText(cbxRiesgoValorImpacto.SelectedItem));
+            //throwException(cbxRiesgoCategoria.GetItemText(cbxRiesgoCategoria.SelectedItem));
 
             Impacto impactoSeleccionado = ImpactoServices.getByValor(Convert.ToInt32(cbxRiesgoValorImpacto.GetItemText(cbxRiesgoValorImpacto.SelectedItem)));
             Probabilidad probabilidadSeleccionada = ProbabilidadServices.getByValor(Convert.ToInt32(cbxRiesgoValorProbabilidad.GetItemText(cbxRiesgoValorProbabilidad.SelectedItem)));
 
             Riesgo riesgoNuevo = new Riesgo {
-                categoria = cbxRiesgoCategoria.SelectedText,
+                categoria = cbxRiesgoCategoria.GetItemText(cbxRiesgoCategoria.SelectedItem),
                 descripcion = txtRiesgoDescripcion.Text,
                 encargadoMonitoreo = txtRiesgoEncargadoMonitoreo.Text,
                 encargadoRespuesta = txtRiesgoEncargadoRespuesta.Text,
@@ -287,6 +289,23 @@ namespace PRC.UI
             cbxRiesgoCategoria.ResetText();
             cbxRiesgoValorProbabilidad.ResetText();
             cbxRiesgoValorImpacto.ResetText();
+        }
+
+        private void btnMenuEV_Click(object sender, EventArgs e)
+        {
+            using (FRMEarnedValue frm = new FRMEarnedValue())
+            {
+                this.Hide();
+                frm.ShowDialog();
+            }
+        }
+
+        private void btnMenuContRiesgos_Click(object sender, EventArgs e)
+        {
+            using (FRMRiesgos frm = new FRMRiesgos()) {
+                this.Hide();
+                frm.ShowDialog();
+            }
         }
     }
 }
