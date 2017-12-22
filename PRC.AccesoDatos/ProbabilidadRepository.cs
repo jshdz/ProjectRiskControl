@@ -54,6 +54,18 @@ namespace PRC.AccesoDatos
             }
         }
 
+        public Probabilidad getByCategoria(string pcategoria)
+        {
+            using (PRCEntities db = new PRCEntities()) {
+
+                var data = from probabilidad in db.Probabilidades
+                           where probabilidad.categoria == pcategoria
+                           select probabilidad;
+
+                return data.FirstOrDefault();
+            }
+        }
+
         public List<Probabilidad> getAll()
         {
             using (PRCEntities db = new PRCEntities()) {

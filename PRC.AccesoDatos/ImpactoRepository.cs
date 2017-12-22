@@ -54,6 +54,18 @@ namespace PRC.AccesoDatos
             }
         }
 
+        public Impacto getByCategoria(string pcategoria)
+        {
+            using (PRCEntities db = new PRCEntities()) {
+
+                var data = from impacto in db.Impactos
+                           where impacto.categoria == pcategoria
+                           select impacto;
+
+                return data.FirstOrDefault();
+            }
+        }
+
         public List<Impacto> getAll()
         {
             using (PRCEntities db = new PRCEntities()) {

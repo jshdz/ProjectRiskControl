@@ -713,7 +713,7 @@
             this.tabControlFRM.FontWeight = MetroFramework.MetroTabControlWeight.Regular;
             this.tabControlFRM.Location = new System.Drawing.Point(243, 68);
             this.tabControlFRM.Name = "tabControlFRM";
-            this.tabControlFRM.SelectedIndex = 0;
+            this.tabControlFRM.SelectedIndex = 1;
             this.tabControlFRM.Size = new System.Drawing.Size(866, 530);
             this.tabControlFRM.Style = MetroFramework.MetroColorStyle.Silver;
             this.tabControlFRM.TabIndex = 12;
@@ -2412,8 +2412,6 @@
             // 
             this.listProbabilidades.BackColor = System.Drawing.Color.White;
             this.listProbabilidades.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listProbabilidades.DataSource = this.probabilidadBindingSource;
-            this.listProbabilidades.DisplayMember = "categoria";
             this.listProbabilidades.Font = new System.Drawing.Font("Open Sans", 9.5F);
             this.listProbabilidades.ForeColor = System.Drawing.Color.DimGray;
             this.listProbabilidades.FormattingEnabled = true;
@@ -2521,8 +2519,6 @@
             // 
             this.listImpactos.BackColor = System.Drawing.Color.White;
             this.listImpactos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listImpactos.DataSource = this.impactoBindingSource;
-            this.listImpactos.DisplayMember = "categoria";
             this.listImpactos.Font = new System.Drawing.Font("Open Sans", 9.5F);
             this.listImpactos.ForeColor = System.Drawing.Color.DimGray;
             this.listImpactos.FormattingEnabled = true;
