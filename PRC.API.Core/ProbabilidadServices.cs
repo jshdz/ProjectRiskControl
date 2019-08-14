@@ -51,6 +51,11 @@ namespace PRC.API.Core
             return repository.getByValor(pvalor);
         }
 
+        public static Probabilidad getByCategoria(string pcategoria)
+        {
+            return repository.getByCategoria(pcategoria);
+        }
+
         public static List<Probabilidad> getAll()
         {
             return repository.getAll();

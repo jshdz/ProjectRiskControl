@@ -11,6 +11,21 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -21,6 +36,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,6 +46,10 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -61,6 +81,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FRMEarnedValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMEarnedValue.Designer.cs">
+      <DependentUpon>FRMEarnedValue.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMRiesgos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +95,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FRMEarnedValue.resx">
+      <DependentUpon>FRMEarnedValue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMRiesgos.resx">
       <DependentUpon>FRMRiesgos.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,12 +143,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\circular-chart-for-education.png" />
     <Content Include="Resources\clear-button.png" />
     <Content Include="Resources\delete.png" />
     <Content Include="Resources\discoun222t.png" />
     <Content Include="Resources\discount.png" />
     <Content Include="Resources\edit.png" />
     <Content Include="Resources\file.png" />
+    <Content Include="Resources\grid %281%29.png" />
     <Content Include="Resources\iconExit.png" />
     <Content Include="Resources\iconLogoPRC.png" />
     <Content Include="Resources\iconResize.png" />
@@ -134,12 +165,25 @@
     <Content Include="Resources\percentage3.png" />
     <Content Include="Resources\presentation.png" />
     <Content Include="Resources\presentation2.png" />
+    <Content Include="Resources\presentationEV2.png" />
     <Content Include="Resources\remove.png" />
     <Content Include="Resources\visibility.png" />
     <Content Include="Resources\warnin233.png" />
     <Content Include="Resources\warning %282%29.png" />
     <Content Include="Resources\warning-%281%292.png" />
     <Content Include="Resources\yield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
